@@ -5,3 +5,7 @@
 .page__footer {
     margin-bottom: 50px;
 }
+
+.page__comment {
+    padding-left: 100px;
+}

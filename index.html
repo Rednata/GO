@@ -30,21 +30,21 @@
         <h2 class="section__title">
           Наши залы
         </h2>
-        <div class="room room_vibe">
-          <p class="room__title">80's</p>
-          <p class="room__title">vibes</p>
+        <div class="room">
+          <img class="room__img" src="./styleCSS/img/80-sVibes.jpg" alt="" >
+          <p class="room__title">80's vibes</p>
         </div>
-        <div class="room room_star">
-          <p class="room__title">star</p>
-          <p class="room__title">wars</p>
+        <div class="room">
+          <img class="room__img" src="./styleCSS/img/starWars.jpg" alt="" >
+          <p class="room__title">star wars</p>
         </div>
-        <div class="room room_west">
-          <p class="room__title">wild</p>
-          <p class="room__title">west</p>
+        <div class="room">
+          <img class="room__img" src="./styleCSS/img/wildWest.jpg" alt="" >
+          <p class="room__title">wild west</p>
         </div>
-        <div class="room room_neon">
-          <p class="room__title">neon</p>
-          <p class="room__title">style</p>
+        <div class="room">
+          <img class="room__img" src="./styleCSS/img/neon.jpg" alt="" >
+          <p class="room__title">neon style</p>
         </div>
       </section>
 
@@ -230,32 +230,40 @@
 
       </section>
 
-<!--      <section id="comment">-->
-<!--        <h2 class="title">Отзывы посетителей</h2>-->
-<!--        <ul>-->
-<!--          <li>-->
-<!--            <figure>-->
-<!--              <img src="#" alt="улыбающийся мужчина">-->
-<!--              <figcaption>Макс Самойлов</figcaption>-->
-<!--            </figure>-->
-<!--            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eligendi fugit itaque natus reprehenderit vel voluptas voluptatum. Beatae, dicta, libero!-->
-<!--          </li>-->
-<!--          <li>-->
-<!--            <figure>-->
-<!--              <img src="#" alt="девушка с длинными волосами в соломенной шляпе">-->
-<!--              <figcaption>Оксана Григорьева</figcaption>-->
-<!--            </figure>-->
-<!--            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, saepe?-->
-<!--          </li>-->
-<!--          <li>-->
-<!--            <figure>-->
-<!--              <img src="#" alt="мужчина в очках на фоне зеленой листвы">-->
-<!--              <figcaption>Никита Ященко</figcaption>-->
-<!--            </figure>-->
-<!--            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos laborum magni nulla quasi quos ratione.-->
-<!--          </li>-->
-<!--        </ul>-->
-<!--      </section>-->
+      <section class="comment page__section" id="comment">
+        <h2 class="section__title">Отзывы посетителей</h2>
+        <ul class="comment__list page__comment">
+          <li class="card">
+            <figure class="card__figure">
+              <img class="card__img" src="./styleCSS/img/person1.jpg" alt="улыбающийся мужчина">
+              <figcaption class="comment__figcaption">Макс Самойлов</figcaption>
+            </figure>
+            <p class="card__content">
+              Отмечали здесь день рождения с компанией друзей, все было очень круто! VR очки это просто бомба, никогда еще я не был в таком полном игровом погружении. Сервис на высоте!
+            </p>
+          </li>
+          <div class="card__clear-float"></div>
+          <li class="card">
+            <figure class="card__figure">
+              <img class="card__img" src="./styleCSS/img/person2.jpg" alt="девушка с длинными волосами в соломенной шляпе">
+              <figcaption class="comment__figcaption">Оксана Григорьева</figcaption>
+            </figure>
+            <p class="card__content">
+              Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный получился корпоратив! У нас в городе больше нет подобных заведений
+            </p>
+          </li>
+          <div class="card__clear-float"></div>
+          <li class="card">
+            <figure class="card__figure">
+              <img class="card__img" src="./styleCSS/img/person3.jpg" alt="мужчина в очках на фоне зеленой листвы">
+              <figcaption class="comment__figcaption comment__figcaption_last">Никита Ященко</figcaption>
+            </figure>
+            <p class="card__content">
+              Немного подвисала игра в VR очках, а так все норм. Крутое оформление комнаты в стиле звездных войн, попал в атмосферу космоса
+            </p>
+          </li>
+        </ul>
+      </section>
 
       <section class="faq page__section">
         <h2 class="section__title">Частые вопросы</h2>
