@@ -1,0 +1,30 @@
+.room {
+    padding: 275px 0;
+    text-align: center;
+    background-position: center;
+}
+
+.room:not(:last-child){
+    margin-bottom: 60px;
+}
+
+.room__title {
+    font-weight: 700;
+    font-size: 70px;
+}
+
+.room_vibe {
+    background-image: url(./img/80-sVibes.jpg);
+}
+
+.room_star {
+    background-image: url(./img/starWars.jpg);
+}
+
+.room_west {
+    background-image: url(./img/wildWest.jpg);
+}
+
+.room_neon {
+    background-image: url(./img/neon.jpg);
+}

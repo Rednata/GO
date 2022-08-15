@@ -1,0 +1,24 @@
+.game-over {
+    padding-top: 146px;
+}
+
+.game-over__title {
+    font-weight: 900;
+    font-size: 150px;
+    line-height: 150px;
+    text-transform: uppercase;
+}
+
+.game-over__subtitle {
+    font-weight: 400;
+    font-size: 28px;
+    padding-left: 100px;
+}
+
+.game-over:after {
+    content: url("./img/vr.png");
+    display: block;
+    position: relative;
+    top: -100px;
+    text-align: right;
+}

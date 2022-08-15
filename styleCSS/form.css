@@ -1,0 +1,6 @@
+.form__room>li,
+.form__play>li,
+.form__game>li,
+.form__add>li {
+    display: inline;
+}
