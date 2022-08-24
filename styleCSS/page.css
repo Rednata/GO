@@ -1,11 +1,14 @@
+.page {
+    padding-top: 30px;
+}
+
+.page__header {
+    margin-bottom: 75px;
+}
 .page__section {
     margin-bottom: 100px;
 }
 
 .page__footer {
     margin-bottom: 50px;
-}
-
-.page__comment {
-    padding-left: 100px;
 }

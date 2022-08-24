@@ -1,0 +1,27 @@
+.comment__list {
+  padding: 0 100px;
+}
+
+.comment__item {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.comment__item:not(:last-child){
+  margin-bottom: 50px;
+}
+
+.comment__img {
+  border-radius: 50%;
+  max-width: 280px;
+  margin-bottom: 11px;
+}
+
+.comment__figcaption {
+  text-align: center;
+}
+
+.comment__content {
+  line-height: 28px;
+}

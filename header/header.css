@@ -1,0 +1,25 @@
+.header {
+  font-size: 22px;
+}
+
+.header__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.header__btn {
+  border: 1px solid #cd06ff;
+  border-radius: 10px;
+  background-color: inherit;
+  color: inherit;
+  font-size: inherit;
+  padding: 12px 32px;
+}

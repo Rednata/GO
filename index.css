@@ -1,11 +1,14 @@
 @import "normalize.css";
 @import "./styleCSS/common.css";
 @import "./styleCSS/page.css";
-@import "./styleCSS/game-over.css";
-@import "./styleCSS/rooms.css";
-@import "./styleCSS/form.css";
-@import "./styleCSS/about.css";
-@import "./styleCSS/comments.css";
-@import "./styleCSS/faq.css";
-@import "./styleCSS/footer.css";
+@import "./header/header.css";
+@import "./game-over/game-over.css";
+@import "./all/all.css";
+
+@import "./rooms/rooms.css";
+@import "./booking/booking.css";
+@import "./about/about.css";
+@import "./comments/comments.css";
+@import "./faq/faq.css";
+@import "./footer/footer.css";
 

@@ -1,0 +1,54 @@
+.all__title {
+  line-height: 50px;
+  margin-bottom: 41px;
+}
+
+.h2__span {
+  display: block;
+}
+
+.all__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 40px;
+}
+
+.all__item {
+  display: flex;
+}
+
+.all-card__title {
+  display: flex;
+  background-repeat: no-repeat;
+  width: 380px;
+  min-height: 228px;
+  line-height: 28px;  
+  white-space: pre;
+  padding-top: 166px;
+  padding-left: 40px;
+}
+
+.all-card__title_VR {
+  background-image: url("./Rectangle29.jpg");
+}
+
+.all-card__title_audio {
+  background-image: url("./Rectangle30.jpg");
+}
+
+.all-card__title_karaoke {
+  background-image: url("./Rectangle31.jpg");
+}
+
+.all-card__title_games {
+  background-image: url("./Rectangle32.jpg");
+}
+
+.all-card__title_cinema {
+  background-image: url("./Rectangle33.jpg");
+}
+
+.all-card__title_plays {
+  background-image: url("./Rectangle34.jpg");
+}
