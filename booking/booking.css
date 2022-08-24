@@ -143,23 +143,22 @@
 
 /* ------------ первая колонка (дата и время)------------ */
 .date-time {
-  display: flex;
-  justify-content: space-between;
+  display: flex; 
+  justify-content: space-between; 
   margin-bottom: 36px;
 }
 
-.date-time__label {
+.date-time__item {
   width: 46%;
   position: relative;
 }
 
-.number__label {
-  position: relative;
+.date-time__input {
+  width: 100%; 
 }
 
 .date-time__input, 
 .number__input {
-  width: 100%;
   min-height: 52px;
 }
 
@@ -167,6 +166,52 @@
 .number__input,
 .person__input {
   outline: none;
+}
+
+.number {
+  position: relative;
+}
+
+.number__input {
+  width: 100%;
+}
+
+.date-time__label:before,
+.number__label:before {  
+  color: #000000;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-left: 20px;
+}
+
+.date-time__label_date:before {
+  content: "Дата";
+}
+
+.date-time__label_time:before {
+  content: "Время";
+}
+
+.number__label:before {
+  content: "Сколько человек";
+}
+
+.date-time__label:after, 
+.number__label:after {
+  content: "\25BC";
+  color: #000000;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.date-time__label:after {
+  left: 75%;  
+}
+
+.number__label:after{
+  left: 89%;
 }
 
 /* ----------- убираю браузерные стили---------- */
@@ -189,19 +234,6 @@
   color: transparent;
 }
 
-.date-time__content,
-.number__content {
-  display: flex;
-  justify-content: space-between;
-  position: absolute;
-  width: 100%;
-  top: 50%;
-  transform: translateY(-50%);
-  padding-left: 20px;
-  padding-right: 20px;
-  font-size: 18px;
-  color: #000000;
-}
 /* ---------- 2 и 3 колонки (ФИО и контактные данные)----------  */
 .person {
   display: flex;
@@ -239,4 +271,3 @@
   margin-right:100px;
   margin-left: auto;
 }
-

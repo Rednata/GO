@@ -5,7 +5,7 @@
 @import "./game-over/game-over.css";
 @import "./all/all.css";
 
-@import "./rooms/rooms.css";
+@import "./room/room.css";
 @import "./booking/booking.css";
 @import "./about/about.css";
 @import "./comments/comments.css";

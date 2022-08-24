@@ -85,14 +85,13 @@ body {
     padding: 0 130px;
 }
 
-.section__title,
-.room__title,
+.title,
 .blockquote__title,
 .blockquote__content{
     text-transform: uppercase;
 }
 
-.section__title {
+.title {
     text-align: center;
     font-weight: 700;
     font-size: 40px;
