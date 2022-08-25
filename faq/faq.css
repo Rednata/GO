@@ -18,36 +18,4 @@
   color: #ffffff;
 }
 
-.open,
-.open_color {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0;
-  border: 2px solid #ffffff;  
-  width: 46px;
-  height: 46px;    
-  border-radius: 50%;
-}
-
-.open_color {
-  border: 2px solid #440f51;
-}
-
-.open__plus,
-.open__plus_color {
-  position: absolute;
-  height: 20px;   
-  border: 1px solid #ffffff; 
-}
-
-.open__plus_color {
-  border: 1px solid #440f51;
-}
-
-.open__plus:first-child {
-  rotate: 90deg; 
-}
-
 

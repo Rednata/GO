@@ -9,7 +9,7 @@
   margin-bottom: 48px;
 }
 
-.content__text_top {
+.content__text>p:first-of-type {
 margin-bottom: 35px;
 }
 
@@ -20,7 +20,7 @@ margin-bottom: 35px;
 }
 
 .blockquote__title:before,
-.blockquote__quote_closed:after {
+.blockquote__quote-closed:after {
   font-weight: 900;
   font-size: 44px;
   color: #6c0287;
@@ -30,7 +30,7 @@ margin-bottom: 35px;
   content: '“';
 }
 
-.blockquote__quote_closed:after{
+.blockquote__quote-closed:after{
   content: '”';
 }
 
@@ -42,6 +42,7 @@ margin-bottom: 35px;
 .cite__img {
   margin-right: 30px;
   border-radius: 100%;
+  align-self: center;
 }
 
 .cite__content {

@@ -41,14 +41,11 @@
   text-align: center;
 }
 
-.advantage__title, .advantage__title_small {
+.advantage__title {
   font-weight: 900;
   line-height: 141px;
   color: #cd06ff;
   text-transform: uppercase;
-}
-
-.advantage__title {
   font-size: 100px;
 }
 
@@ -71,7 +68,7 @@
   min-height: 80px;
 
 }
-.game-over__btn_blur {
+.game-over__btn-blur {
   position: absolute;
   width: 100%;  
   height: 100%;

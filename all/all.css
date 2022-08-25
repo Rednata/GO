@@ -3,7 +3,7 @@
   margin-bottom: 41px;
 }
 
-.all__title_span {
+.all__title-span {
   display: block;
 }
 
@@ -15,40 +15,33 @@
 }
 
 .all__item {
-  display: flex;
-}
-
-.all-card__title {
-  display: flex;
-  background-repeat: no-repeat;
   width: 380px;
-  min-height: 228px;
   line-height: 28px;  
-  white-space: pre;
   padding-top: 166px;
   padding-left: 40px;
+  padding-bottom: 6px;
 }
 
-.all-card__title_VR {
+.all__item_VR {
   background-image: url("./Rectangle29.jpg");
 }
 
-.all-card__title_audio {
+.all__item_audio {
   background-image: url("./Rectangle30.jpg");
 }
 
-.all-card__title_karaoke {
+.all__item_karaoke {
   background-image: url("./Rectangle31.jpg");
 }
 
-.all-card__title_games {
+.all__item_games {
   background-image: url("./Rectangle32.jpg");
 }
 
-.all-card__title_cinema {
+.all__item_cinema {
   background-image: url("./Rectangle33.jpg");
 }
 
-.all-card__title_plays {
+.all__item_plays {
   background-image: url("./Rectangle34.jpg");
 }

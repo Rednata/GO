@@ -52,14 +52,6 @@
     gap: 26px;
 }
 
-.social__link:before {
-    content: "";
-    display: block;
-    width: 50px;
-    height: 50px;
-    background-image: url("./social_vk-with-circle.svg");
-}
-
 .copyright {
     display: flex;
     justify-content: space-between;
@@ -68,7 +60,7 @@
     padding-bottom: 20px;
 }
 
-.copyright_right {
+.copyright__contacts {
     text-align: right;
 }
 

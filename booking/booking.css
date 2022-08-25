@@ -116,10 +116,11 @@
   height: 15px;
   border-bottom: 4px solid #6c0287;
   border-right: 4px solid #6c0287;
-  rotate: 45deg;
   left: 0;
-  translate: 35% -70%;
+  top: -20%;
+  transform: translateX(50%);
   opacity: 0;
+  rotate: 45deg;
 }
 
 .game__input:checked:after{
