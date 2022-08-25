@@ -20,6 +20,7 @@
 
 .open,
 .open_color {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,6 +37,7 @@
 
 .open__plus,
 .open__plus_color {
+  position: absolute;
   height: 20px;   
   border: 1px solid #ffffff; 
 }
@@ -46,11 +48,6 @@
 
 .open__plus:first-child {
   rotate: 90deg; 
-  translate: 1px 0px;
-}
-
-.open__plus:last-child{
-  translate: -1px 0px;   
 }
 
 

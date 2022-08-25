@@ -76,6 +76,7 @@
 /* ------ стилизация radio и checkbox--------- */
 .game__input[type="radio"]:before, 
 .game__input[type="checkbox"]:before {
+  position: absolute;
   content: "";
   display: block;
   left: 0;
@@ -84,7 +85,6 @@
   width: 27px;
   height: 27px;
   background-color: #ffffff;
-  position: absolute;
 }
 
 .game__input[type="radio"]:before{
@@ -95,9 +95,9 @@
 
 .game__input[type="radio"]:after,
 .game__input[type="checkbox"]:after {
+  position: absolute;
   content: "";
   display: block;
-  position: absolute;
   opacity: 0;
   top: 50%;
 } 
