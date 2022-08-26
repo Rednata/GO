@@ -38,6 +38,7 @@
 .choice-room__label {
   display: block; 
   background-color: #ffffff;
+  border: 1px solid #ffffff;
   border-radius: 8px;
   color: #000000;
   font-weight: 700;
@@ -50,6 +51,24 @@
 .choice-room__input {
   appearance: none;    /*скрыла  radio */   
 }
+
+.choice-room__label:hover {
+  background-color: #eadeed;
+  border: 1px solid #640aa3;
+}
+
+
+.choice-room__label:focus-within {
+  background-color: #ffffff;
+  border: 1px solid #640aa3;
+}
+
+.choice-room__label:active {
+  background-color: #6c0287;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+
 
 /* -------- собери набор развлечений ------------ */
 
@@ -84,11 +103,26 @@
   transform: translateY(-50%);
   width: 27px;
   height: 27px;
-  background-color: #ffffff;
-}
+  background-repeat: no-repeat;
+  background-position: center;
+  box-sizing:content-box;
+  }
 
 .game__input[type="radio"]:before{
-  border-radius: 50%;
+  background-image: url("./Ellipse4.svg");
+}
+
+.game__input[type="checkbox"]:before{
+  background-image: url("./Rectangle38.svg");
+}
+
+.game__input[type="checkbox"]:focus-within:before {
+  border: 1px solid #cd06ff;
+}
+
+.game__input[type="radio"]:focus-within:before {
+  border-radius: 0%;
+  border: 1px solid #cd06ff;
 }
 
 /* ------ стилизация чекнутых radio и checkbox--------- */
@@ -96,18 +130,18 @@
 .game__input[type="radio"]:after,
 .game__input[type="checkbox"]:after {
   position: absolute;
+  left: 9px;
+  top: 50%;
   content: "";
   display: block;
-  opacity: 0;
-  top: 50%;
+  opacity: 0;  
 } 
 
 .game__input[type="radio"]:after {
-  width: 13px;
-  height: 13px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   background-color: #6c0287;
-  left: 7px;
   transform: translateY(-50%);
 }
 
@@ -235,6 +269,11 @@
   color: transparent;
 }
 
+.date-time__input:focus,
+.number__input:focus {
+  border: 1px solid #cd06ff; 
+}
+
 /* ---------- 2 и 3 колонки (ФИО и контактные данные)----------  */
 .person {
   display: flex;
@@ -257,8 +296,12 @@
   min-height: 52px;
 }
 
+.person__input:focus {
+  border: 1px solid #cd06ff; 
+}
 
-.button {
+
+.booking__button {
   display: block;
   border: none;
   min-width: 300px;
@@ -267,8 +310,27 @@
   font-size: 22px;
   line-height: 28px;
   text-transform: uppercase;
-  padding: 16px 50px;
+  padding: 15px 50px;
   border-radius: 10px;
   margin-right:100px;
   margin-left: auto;
+  border: 1px solid #ffffff;
 }
+
+.booking__button:hover {
+  background-color: #eadeed;
+  border: 1px solid #6c0287;
+}
+
+.booking__button:focus {
+  background-color: #ffffff;
+  border: 1px solid #6c0287;
+  outline: none;
+}
+
+.booking__button:active {
+  background-color:#eadeed;
+  border: 1px solid #eadeed;
+  outline: none;
+}
+

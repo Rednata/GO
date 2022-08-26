@@ -18,4 +18,31 @@
   color: #ffffff;
 }
 
+.faq__img {
+  width: 46px;
+  height: 46px;
+}
 
+.faq__img_purple {
+  background-image: url("./openPurple.svg");
+}
+
+.faq__img_white {
+  background-image: url("./openWhite.svg");
+}
+
+.faq__img_purple:hover{
+  background-image: url("./openHoverPurple.svg");
+}
+
+.faq__img_white:hover {
+  background-image: url("./openHoverWhite.svg");
+}
+
+.faq__img_purple:active {
+  background-image: url("./closeActivePurple.svg");
+}
+
+.faq__img_white:active {
+  background-image: url("./openActiveWhite.svg");
+}
