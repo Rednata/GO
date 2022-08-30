@@ -33,16 +33,20 @@
 
 .faq__img_purple:hover{
   background-image: url("./openHoverPurple.svg");
-}
-
-.faq__img_white:hover {
-  background-image: url("./openHoverWhite.svg");
+  transition: background-image 0.3s;
 }
 
 .faq__img_purple:active {
   background-image: url("./closeActivePurple.svg");
+  animation: anim-opacity 0.3s linear;
+}
+
+.faq__img_white:hover {
+  background-image: url("./openHoverWhite.svg");
+  transition: background-image 0.3s;
 }
 
 .faq__img_white:active {
   background-image: url("./openActiveWhite.svg");
+  animation: anim-opacity 0.3s linear;
 }

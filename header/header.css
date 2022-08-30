@@ -30,9 +30,12 @@
 .header__btn:focus {
   background-color: #6c0287;
   border: 3px solid #6c0287;
+  transition: background-color 0.2s, border 0.2s;
 }
 
 .header__btn:active {
   background-color: #640aa3;
   border: 3px solid #640aa3;
+  transition: background-color 0.2s, border 0.2s;
 }
+

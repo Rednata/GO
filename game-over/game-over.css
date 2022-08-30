@@ -79,14 +79,17 @@
 
 .game-over__btn:hover {
   background-color: #840aa3;
+  transition: background-color 0.2s;
 }
 
 .game-over__btn:focus-within {
   background-color: #840aa3;
+  transition: background-color 0.2s;
 }
 
 .game-over__btn:active {
   background-color: #640AA3;
+  transition: background-color 0.2s;
 }
 
 
@@ -116,15 +119,18 @@
 
 .game-over__link-icon:hover{
   background-image: url("./downHover.svg");
+  animation: anim-opacity 0.5s linear; 
 }
 
 .game-over__link-icon:focus{
   background-image: url("./down.svg");
   border: 1px solid #cd06ff;
   outline: none;
+  animation: anim-opacity 0.1s; 
 }
 
 .game-over__link-icon:active{
   background-image: url("./downActive.svg");
   border: none;
+  transition: background-image 0.5s;
 }

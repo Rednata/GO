@@ -50,24 +50,29 @@
 
 .choice-room__input {
   appearance: none;    /*скрыла  radio */   
+  outline: none;
 }
 
 .choice-room__label:hover {
   background-color: #eadeed;
   border: 1px solid #640aa3;
-}
+  transition: background-color 0.3s, border 0.3s;
+  }
 
 
 .choice-room__label:focus-within {
   background-color: #ffffff;
   border: 1px solid #640aa3;
+  transition: background-color 0.3s, border 0.3s;
 }
 
 .choice-room__label:active {
   background-color: #6c0287;
   border: 1px solid #ffffff;
   color: #ffffff;
+  transition: background-color 0.3s, border 0.3s, color 0.3s;
 }
+
 
 
 /* -------- собери набор развлечений ------------ */
@@ -103,6 +108,7 @@
   transform: translateY(-50%);
   width: 27px;
   height: 27px;
+  border: 1px solid #440f51;
   background-repeat: no-repeat;
   background-position: center;
   box-sizing:content-box;
@@ -117,12 +123,19 @@
 }
 
 .game__input[type="checkbox"]:focus-within:before {
+
   border: 1px solid #cd06ff;
+  transition: border 0.2s linear;
 }
 
 .game__input[type="radio"]:focus-within:before {
   border-radius: 0%;
   border: 1px solid #cd06ff;
+  transition: border 0.2s linear;
+}
+
+.game__input:focus {
+  outline: none;
 }
 
 /* ------ стилизация чекнутых radio и checkbox--------- */
@@ -136,6 +149,8 @@
   display: block;
   opacity: 0;  
 } 
+
+
 
 .game__input[type="radio"]:after {
   width: 10px;
@@ -151,10 +166,9 @@
   border-bottom: 4px solid #6c0287;
   border-right: 4px solid #6c0287;
   left: 0;
-  top: -20%;
-  transform: translateX(50%);
+  top: 0%;
+  transform: translateX(40%) rotate(45deg);
   opacity: 0;
-  rotate: 45deg;
 }
 
 .game__input:checked:after{
@@ -272,6 +286,7 @@
 .date-time__input:focus,
 .number__input:focus {
   border: 1px solid #cd06ff; 
+  transition: border 0.2s linear;
 }
 
 /* ---------- 2 и 3 колонки (ФИО и контактные данные)----------  */
@@ -298,6 +313,7 @@
 
 .person__input:focus {
   border: 1px solid #cd06ff; 
+  transition: border 0.2s linear;
 }
 
 
@@ -320,17 +336,20 @@
 .booking__button:hover {
   background-color: #eadeed;
   border: 1px solid #6c0287;
+  transition: background-color 0.2s linear, border 0.2s linear;
 }
 
 .booking__button:focus {
   background-color: #ffffff;
   border: 1px solid #6c0287;
   outline: none;
+  transition: background-color 0.2s linear, border 0.2s linear;
 }
 
 .booking__button:active {
   background-color:#eadeed;
   border: 1px solid #eadeed;
   outline: none;
+  transition: background-color 0.2s linear, border 0.2s linear;
 }
 

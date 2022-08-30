@@ -98,9 +98,16 @@ body {
     margin-bottom: 50px;
 }
 
-/*--------- common margin & padding--------------*/
+/*--------- animation for svg-images --------------*/
 
 
-
+@keyframes anim-opacity {
+    from {
+      opacity: 0.3
+    }
+    to {
+      opacity: 1;
+    }
+  }
 
 
