@@ -1,3 +1,7 @@
+.all {
+  margin-bottom: 170px;
+}
+
 .all__title {
   line-height: 50px;
   margin-bottom: 41px;
@@ -27,11 +31,18 @@
   transition: transform 0.7s;
 }
 
+.all__item_audio:hover,
+.all__item_cinema:hover {
+  transform:  translateY(70px) scale(1.1);
+  transition: transform 0.7s;
+}
+
 .all__item_VR {
   background-image: url("./Rectangle29.jpg");
 }
 
 .all__item_audio {
+  transform: translateY(70px);
   background-image: url("./Rectangle30.jpg");
 }
 
@@ -44,6 +55,7 @@
 }
 
 .all__item_cinema {
+  transform: translateY(70px);
   background-image: url("./Rectangle33.jpg");
 }
 
