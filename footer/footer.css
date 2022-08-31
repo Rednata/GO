@@ -77,13 +77,13 @@
 
 .social__link:focus {
     color: #eadeed;
-    border: 1px solid #cd06ff;
+    border: 1px solid var(--accent-color, #cd06ff);
     outline: none;
     transition: color 0.3s, border 0.3s;
 }
 
 .social__link:active {
-    color: #cd06ff;
+    color: var(--accent-color, #cd06ff);
     border: 1px solid #370A37;
     transition: color 0.3s, border 0.3s;
 }
