@@ -1,7 +1,7 @@
 @import "normalize.css";
-@import "./styleCSS/var.css";
-@import "./styleCSS/common.css";
-@import "./styleCSS/page.css";
+@import "./CSS/var.css";
+@import "./CSS/common.css";
+@import "./CSS/page.css";
 @import "./header/header.css";
 @import "./game-over/game-over.css";
 @import "./all/all.css";
