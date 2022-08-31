@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff;
+  background-color: var(--main-color-text, #ffffff);
   font-weight: 700;
   font-size: 24px;
   color: #1C1A1A;
@@ -14,8 +14,8 @@
 }
 
 .faq__pos_color  {
-  background-color: #440f51;
-  color: #ffffff;
+  background-color: var(--firm-color, #440f51);
+  color: var(--main-color-text, #ffffff);
 }
 
 .faq__img {

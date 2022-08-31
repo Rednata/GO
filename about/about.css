@@ -23,7 +23,7 @@ margin-bottom: 35px;
 .blockquote__quote-closed:after {
   font-weight: 900;
   font-size: 44px;
-  color: #6c0287;
+  color: var(--effect-color1, #6c0287);
 }
 
 .blockquote__title:before{

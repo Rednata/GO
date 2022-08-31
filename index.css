@@ -1,4 +1,5 @@
 @import "normalize.css";
+@import "./styleCSS/var.css";
 @import "./styleCSS/common.css";
 @import "./styleCSS/page.css";
 @import "./header/header.css";

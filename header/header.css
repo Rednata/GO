@@ -16,7 +16,7 @@
 }
 
 .header__btn {
-  border: 3px solid #cd06ff;
+  border: 3px solid var(--accent-color);
   border-radius: 10px;
   background-color: inherit;
   color: inherit;
@@ -28,14 +28,14 @@
 
 .header__btn:hover, 
 .header__btn:focus {
-  background-color: #6c0287;
-  border: 3px solid #6c0287;
+  background-color: var(--effect-color1, #6c0287);
+  border: 3px solid var(--effect-color1, #6c0287);
   transition: background-color 0.2s, border 0.2s;
 }
 
 .header__btn:active {
-  background-color: #640aa3;
-  border: 3px solid #640aa3;
+  background-color: var(--active-color, #640aa3);
+  border: 3px solid var(--active-color, #640aa3);
   transition: background-color 0.2s, border 0.2s;
 }
 
