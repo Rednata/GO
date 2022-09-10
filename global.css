@@ -72,10 +72,11 @@ iframe {
 
 body {
     min-width: 320px;
-    min-height: 100vh;
+    min-height: 100vh;    
+    background-color: var(--bg-color);
+    color: var(--light-color-text);
     font-family: Arial, sans-serif;
-    background-color: var(--main-color, #1b1a1b);
-    color: var(--main-color-text, #ffffff);
+    font-weight: 400;
     font-size: 20px;
 }
 
@@ -111,3 +112,20 @@ body {
   }
 
 
+@media(max-width:1200px) {
+    .container {
+        padding: 0px 60px;
+    }
+}
+
+@media(max-width:860px) {
+    .container {
+        padding: 0px 40px;
+    }
+}
+
+@media(max-width:480px) {
+    .container {
+        padding: 0px 20px;
+    }
+}

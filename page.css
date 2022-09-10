@@ -1,0 +1,22 @@
+.page {
+    padding-top: 30px;
+}
+
+.page__header {
+    margin-bottom: 75px;
+}
+.page__section {
+    margin-bottom: 100px;
+}
+
+@media(max-width:860px) {
+    .page {
+        padding-top: 32px;
+    }
+}
+
+@media(max-width:480px) {
+    .page {
+        padding-top: 20px;
+    }
+}

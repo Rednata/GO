@@ -10,8 +10,11 @@
   <header class="header page__header">
     <div class="container">
       <div class="header__box">
-        <a href="https://rednata.github.io/GO/" class="logo"><img src="./header/logo_light.svg" alt="логотип"></a>
-        <nav class="header__nav nav">
+        <div class="header__burger burger">
+          <img class="burger__img" src="./assets/header/menu.svg" alt="бургер-меню">
+        </div>
+        <a href="https://rednata.github.io/GO/" class="logo"><img src="./assets/header/logo_light.svg" alt="логотип"></a>
+        <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
               <a href="#rooms" class="nav__link">залы</a>
@@ -30,7 +33,7 @@
             </li>
           </ul>
         </nav>
-        <form action="https://jsonplaceholder.typicode.com/posts" method="post">
+        <form class="header__form" action="https://jsonplaceholder.typicode.com/posts" method="post">
           <button class="header__btn" type="submit">заказать звонок</button>
         </form>
       </div>
