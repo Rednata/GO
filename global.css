@@ -70,6 +70,10 @@ iframe {
 /*    margin: 0 auto;*/
 /*}*/
 
+html {
+    scroll-behavior: smooth;
+  }
+
 body {
     min-width: 320px;
     min-height: 100vh;    
@@ -83,7 +87,7 @@ body {
 .container {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 0 130px;
+    padding: 0 130px;    
 }
 
 .title,
@@ -112,9 +116,12 @@ body {
   }
 
 
-@media(max-width:1200px) {
+@media(max-width:1250px) {
     .container {
         padding: 0px 60px;
+    }
+    .title {
+        font-size: 30px;
     }
 }
 
@@ -122,10 +129,17 @@ body {
     .container {
         padding: 0px 40px;
     }
+    .title {
+        font-size: 24px;
+    }
 }
 
 @media(max-width:480px) {
     .container {
         padding: 0px 20px;
+    }
+    .title {
+        font-size: 14px;
+        margin-bottom: 15px;
     }
 }

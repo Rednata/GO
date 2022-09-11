@@ -49,7 +49,7 @@
   transition: background-color 0.2s, border 0.2s;
 }
 
-@media(max-width:1200px) {
+@media(max-width:1250px) {
   .logo {
     width: 87px;
   }

@@ -12,18 +12,29 @@
 }
 
 .all__list {
-  display: flex;
-  justify-content: space-between;
+  /* display: flex; */
+  /* justify-content: space-between; */
   flex-wrap: wrap;
-  row-gap: 40px;
+  gap: 40px 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 228px);
 }
 
 .all__item {
-  width: 380px;
-  line-height: 28px;  
+  border: 1px solid red;
+  /* width: 100%; */
+  /* width: 26.4vw; */
+  /* width: 380px; */
+  /* width: 32%; */
+  display: flex;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* line-height: 28px;  
   padding-top: 166px;
   padding-left: 40px;
-  padding-bottom: 6px;
+  padding-bottom: 6px; */
 }
 
 .all__item:hover {
@@ -38,27 +49,41 @@
 }
 
 .all__item_VR {
-  background-image: url("./Rectangle29.jpg");
+  background-image: url("./assets/all/Rectangle29.jpg");
 }
 
 .all__item_audio {
-  transform: translateY(70px);
-  background-image: url("./Rectangle30.jpg");
+  /* transform: translateY(70px); */
+  background-image: url("./assets/all/Rectangle30.jpg");
 }
 
 .all__item_karaoke {
-  background-image: url("./Rectangle31.jpg");
+  background-image: url("./assets/all/Rectangle31.jpg");
 }
 
 .all__item_games {
-  background-image: url("./Rectangle32.jpg");
+  background-image: url("./assets/all/Rectangle32.jpg");
 }
 
 .all__item_cinema {
-  transform: translateY(70px);
-  background-image: url("./Rectangle33.jpg");
+  /* transform: translateY(70px); */
+  background-image: url("./assets/all/Rectangle33.jpg");
 }
 
 .all__item_plays {
-  background-image: url("./Rectangle34.jpg");
+  background-image: url("./assets/all/Rectangle34.jpg");
 }
+
+
+@media(max-width:1250px) {
+  .all__item {    
+    gap: 22px 30px;
+  }
+}
+
+@media(max-width:860px) {
+  .all__item {    
+    gap: 22px 30px;
+  }
+}
+

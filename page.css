@@ -3,10 +3,17 @@
 }
 
 .page__header {
-    margin-bottom: 75px;
+    margin-bottom: 50px;
 }
 .page__section {
     margin-bottom: 100px;
+}
+
+
+@media(max-width:1250px) {
+    .page__header {
+        margin-bottom: 30px;
+    }
 }
 
 @media(max-width:860px) {

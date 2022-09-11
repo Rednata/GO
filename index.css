@@ -3,9 +3,9 @@
 @import "./global.css";
 @import "./page.css";
 @import "./header.css";
-/* @import "./game-over.css"; */
-/* @import "./all.css"; */
-/* @import "./room.css"; */
+@import "./game-over.css";
+@import "./all.css";
+@import "./room.css";
 /* @import "./booking.css"; */
 /* @import "./about.css"; */
 /* @import "./comments.css"; */

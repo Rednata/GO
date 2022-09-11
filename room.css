@@ -1,31 +1,69 @@
 .room__list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+  display: grid;
+  /* flex-wrap: wrap; */
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 349px);
+  gap: 20px;
 }
 
 .room__item {
-    flex-basis: 580px;
-    background-repeat: no-repeat;
-    padding: 94px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* flex-basis: 580px; */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* padding: 94px 0; */            
 }
 
 .room__item_vibes {
-    background-image: url("./80-sVibes.jpg");
+  background-image: url("./assets/room/80-sVibes.jpg");
 }
 .room__item_star {
-    background-image: url("./starWars.jpg");
+  background-image: url("./assets/room/starWars.jpg");
 }
 .room__item_west {
-    background-image: url("./wildWest.jpg");
+  background-image: url("./assets/room/wildWest.jpg");
 }
 .room__item_neon {
-    background-image: url("./neon.jpg");
+  background-image: url("./assets/room/neon.jpg");
 }
 
 .room__title {
-    font-weight: 700;
-    font-size: 70px;
-    text-align: center;
-    text-transform: uppercase;
+  font-weight: 700;
+  font-size: 70px;
+  text-align: center;
+  text-transform: uppercase;        
+}
+
+@media(max-width:1250px) {
+  .room__title {
+      font-size: 50px;
+  }
+  .room__list {
+      grid-template-rows: repeat(2, 265px);
+  }
+}
+
+@media(max-width:860px) {
+  .room__title {
+      font-size: 40px;
+  }
+  .room__list {
+      grid-template-rows: repeat(2, 200px);
+  }
+}
+
+@media(max-width:480px) {
+  .room__title {
+      font-size: 26px;
+      /* padding-bottom: 35px; */
+  }
+  .room__list {
+      grid-template-columns: 1fr;
+      grid-template-rows: 168px;
+      grid-auto-rows: 168px;
+      gap: 10px;
+  }
 }
