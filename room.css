@@ -1,6 +1,5 @@
 .room__list {
   display: grid;
-  /* flex-wrap: wrap; */
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 349px);
   gap: 20px;
@@ -10,11 +9,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* flex-basis: 580px; */
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
-  /* padding: 94px 0; */            
+ background-size: cover;
 }
 
 .room__item_vibes {
@@ -58,7 +55,6 @@
 @media(max-width:480px) {
   .room__title {
       font-size: 26px;
-      /* padding-bottom: 35px; */
   }
   .room__list {
       grid-template-columns: 1fr;

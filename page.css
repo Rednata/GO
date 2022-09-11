@@ -14,16 +14,25 @@
     .page__header {
         margin-bottom: 30px;
     }
+    .page__section {
+        margin-bottom: 70px;
+    }
 }
 
 @media(max-width:860px) {
     .page {
         padding-top: 32px;
     }
+    .page__section {
+        margin-bottom: 60px;
+    }
 }
 
 @media(max-width:480px) {
     .page {
         padding-top: 20px;
+    }
+    .page__section {
+        margin-bottom: 30px;
     }
 }
