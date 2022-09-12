@@ -6,7 +6,7 @@
   font-weight: 700;
   font-size: 24px;
   color: #1C1A1A;
-  padding: 30px 70px;
+  padding: 21px 70px;
 }
 
 .faq__pos:not(:last-child){
@@ -21,32 +21,91 @@
 .faq__img {
   width: 46px;
   height: 46px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .faq__img_purple {
-  background-image: url("./openPurple.svg");
+  background-image: url("./assets/faq/openPurple.svg");
 }
 
 .faq__img_white {
-  background-image: url("./openWhite.svg");
+  background-image: url("./assets/faq/openWhite.svg");
 }
 
 .faq__img_purple:hover{
-  background-image: url("./openHoverPurple.svg");
+  background-image: url("./assets/faq/openHoverPurple.svg");
   transition: background-image 0.3s;
 }
 
 .faq__img_purple:active {
-  background-image: url("./closeActivePurple.svg");
+  background-image: url("./assets/faq/closeActivePurple.svg");
   animation: anim-opacity 0.3s linear;
 }
 
 .faq__img_white:hover {
-  background-image: url("./openHoverWhite.svg");
+  background-image: url("./assets/faq/openHoverWhite.svg");
   transition: background-image 0.3s;
 }
 
 .faq__img_white:active {
-  background-image: url("./openActiveWhite.svg");
+  background-image: url("./assets/faq/openActiveWhite.svg");
   animation: anim-opacity 0.3s linear;
+}
+
+@media(max-width:1250px) {
+  .faq__pos {    
+    font-size: 20px;
+    padding: 12px 20px 12px 30px;    
+  }    
+  .faq__pos:not(:last-child){
+    margin-bottom: 16px;
+  }
+  .faq__pos_color  {
+    background-color: var(--light-color-text);
+    color: #1C1A1A;
+  }  
+  .faq__pos_none {
+    display: none;
+  }
+  .faq__img_white {
+    background-image: url("./assets/faq/openPurple.svg");
+  }
+  .faq__img_white:hover {
+    background-image: url("./assets/faq/openHoverPurple.svg");    
+  }
+  .faq__img_white:active {
+    background-image: url("./assets/faq/closeActivePurple.svg");    
+  }
+}
+
+@media(max-width:860px) {
+  .faq__pos {    
+    font-size: 18px;
+    padding: 23px 65px 24px 54px;    
+  }    
+}
+
+@media(max-width:650px) {
+  .faq__pos {        
+    padding: 7px 13px 7px 10px;  
+  }    
+  .faq__img {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media(max-width:480px) {
+  .faq__pos {        
+    font-size: 12px;
+  }    
+  .faq__img {
+    width: 30px;
+    height: 30px;
+  }
+  .faq__pos:not(:last-child){
+    margin-bottom: 10px;
+  }
 }
