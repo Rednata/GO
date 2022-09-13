@@ -210,21 +210,25 @@
                       <label class="game__label" >
                         <input class="game__input" type="checkbox" name="boardGames" value="jenga">Jenga
                       </label>
+                      </li>
 
                     <li class="game__item">
                       <label class="game__label">
                         <input class="game__input" type="checkbox" name="boardGames" value="monopoly">Monopoly
                       </label>
+                      </li>
 
                     <li class="game__item">
                       <label class="game__label">
                         <input class="game__input" type="checkbox" name="boardGames" value="manchkin">Манчкин
                       </label>
+                      </li>                      
 
                     <li class="game__item">
                       <label class="game__label">
                         <input class="game__input" type="checkbox" name="boardGames" value="alias">Alias
                       </label>
+                      </li>
 
                   </ul>
                 </fieldset>
@@ -251,9 +255,98 @@
 
             <fieldset class="booking__fieldset form__fieldset">
               <legend class="form__title">Выбери дату и время</legend>
-              <div class="form__3column choice">
+              <div class="choice">
 
-                <div class="choice__item">
+                <ul class="choice__list">
+
+                  <li class="choice__item choice__item_date-time">
+                    <div class="date-time ">                    
+                      <div class="date-time__item">
+                        <label class="date-time__label date-time__label_date" for="date"></label>                      
+                        <input class="date-time__input" type="date" id="date">
+                      </div>                    
+                      <div class="date-time__item">
+                        <label class="date-time__label date-time__label_time" for="time"></label>
+                        <input class="date-time__input" type="time" id="time">
+                      </div>  
+                    </div>
+                  </li>
+                  
+                  <li class="choice__item choice__item_number">
+                    <div class="number">
+                      <label class="number__label" for="number"></label>
+                        <input class="number__input" type="number" min="1" name="number" id="number">                    
+                    </div> 
+                  </li>
+                  <li class="choice__item">
+                    <div class="person choice__person">
+                      <label class="person__label" for="name"></label>Имя
+                      <input class="person__input" type="text" id="name" name="name" placeholder="Введите имя">
+                    </div>
+                  </li>
+                  <li class="choice__item choice__item_surname">
+                    <div class="person">
+                      <label class="person__label" for="surname"></label>Фамилия
+                      <input class="person__input" type="text" id="surname" name="surname" placeholder="Введите фамилию">
+                    </div>
+                  </li>
+
+                  <li class="choice__item">
+                    <div class="person choice__person">
+                      <label class="person__label" for="tel"></label>Телефон
+                      <input class="person__input" type="tel" id="tel" name="tel" placeholder="Введите номер телефона">
+                    </div>
+                  </li>   
+                    <li class="choice__item">
+                      <div class="person">
+                        <label class="person__label" for="email"></label>E-mail
+                        <input class="person__input" type="email" id="email" name="email" placeholder="Введите e-mail">
+                      </div>                    
+                    </li>                  
+
+                  <!-- <li class="choice__item">
+
+                    <div class="date-time ">                    
+                      <div class="date-time__item">
+                        <label class="date-time__label date-time__label_date" for="date"></label>                      
+                        <input class="date-time__input" type="date" id="date">
+                      </div>                    
+                      <div class="date-time__item">
+                        <label class="date-time__label date-time__label_time" for="time"></label>
+                        <input class="date-time__input" type="time" id="time">
+                      </div>  
+                    </div>
+                    <div class="number">
+                      <label class="number__label" for="number"></label>
+                        <input class="number__input" type="number" min="1" name="number" id="number">                    
+                    </div>                       
+                    
+                  </li> -->
+                  
+                  <!-- <li class="choice__item">
+                    <div class="person choice__person">
+                      <label class="person__label" for="name"></label>Имя
+                      <input class="person__input" type="text" id="name" name="name" placeholder="Введите имя">
+                    </div>
+                    <div class="person">
+                      <label class="person__label" for="surname"></label>Фамилия
+                      <input class="person__input" type="text" id="surname" name="surname" placeholder="Введите фамилию">
+                    </div>                    
+                  </li>
+
+                  <li class="choice__item">
+                    <div class="person choice__person">
+                      <label class="person__label" for="tel"></label>Телефон
+                      <input class="person__input" type="tel" id="tel" name="tel" placeholder="Введите номер телефона">
+                    </div>
+                    <div class="person">
+                      <label class="person__label" for="email"></label>E-mail
+                      <input class="person__input" type="email" id="email" name="email" placeholder="Введите e-mail">
+                    </div>                  
+                  </li>                   -->
+                </ul>
+
+                <!-- <div class="choice__item">
                   <div class="date-time">                    
                     <div class="date-time__item">
                       <label class="date-time__label date-time__label_date" for="date"></label>                      
@@ -293,7 +386,7 @@
                     <input class="person__input" type="email" id="email" name="email" placeholder="Введите e-mail">
                   </div>
 
-                </div>
+                </div> -->
                 
               </div>
             </fieldset>

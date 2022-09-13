@@ -21,7 +21,7 @@
 
 .about__content {
   line-height: 28px;   
-  margin-bottom: 27px;
+  margin-bottom: 48px;
 }
 
 .about__content>p:first-of-type {
@@ -36,7 +36,7 @@
   
 .blockquote__title {
   font-weight: 400;  
-  margin-bottom: 40px;  
+  margin-bottom: 26px;  
   max-width: 85%;
 }
 
@@ -64,7 +64,7 @@
 
 .cite {
   display: flex;
-  padding-left: 23%;
+  padding-left: 16%;
 }
 
 .cite__img {
