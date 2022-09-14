@@ -1,0 +1,129 @@
+.all__container {
+  margin-bottom: 170px;
+}
+
+.all__title {
+  line-height: 50px;
+  margin-bottom: 43px;
+}
+
+.all__title-span {
+  display: block;
+}
+
+.all__list {      
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 228px);
+  gap: 40px 20px;  
+}
+
+.all__item {  
+  display: flex;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-left: 40px;
+  padding-bottom: 20px;  
+}
+
+.all__item:hover {
+  transform: scale(1.1);
+  transition: transform 0.7s;
+}
+
+.all__item_audio:hover,
+.all__item_cinema:hover {
+  transform:  translateY(70px) scale(1.1);
+  transition: transform 0.7s;
+}
+
+.all__item_VR {
+  background-image: url("./assets/all/Rectangle29.jpg");
+}
+
+.all__item_audio {
+  transform: translateY(70px);
+  background-image: url("./assets/all/Rectangle30.jpg");
+}
+
+.all__item_karaoke {
+  background-image: url("./assets/all/Rectangle31.jpg");
+}
+
+.all__item_games {
+  background-image: url("./assets/all/Rectangle32.jpg");
+}
+
+.all__item_cinema {
+  transform: translateY(70px);
+  background-image: url("./assets/all/Rectangle33.jpg");
+}
+
+.all__item_plays {
+  background-image: url("./assets/all/Rectangle34.jpg");
+}
+
+@media(max-width:1250px) {
+  .all__container {
+    margin-bottom: 120px;
+  }
+  .all__list {    
+    grid-template-rows: repeat(2, 172px);
+    gap: 32px 30px;
+  }  
+  .all__title {
+    line-height: 40px;
+    margin-bottom: 37px;    
+  }
+  .all__item {
+    padding-left: 20px;
+  }
+  .all__item_audio,
+  .all__item_cinema {
+    transform: translateY(53px);    
+  }  
+}
+
+@media(max-width:860px) {
+  .all__container {
+    margin-bottom: 60px;
+  }
+  .all__title {
+    margin-bottom: 28px;
+  }
+  .all__list {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    gap: 20px;
+  }    
+  .all__item_audio,
+  .all__item_cinema {
+    transform: translateY(0) ;    
+  }
+  .all__item_audio:hover,
+  .all__item_cinema:hover {
+  transform:  translateY(0px) scale(1.1);  
+  }
+}
+
+@media(max-width:480px) {
+  .all__container {
+    margin-bottom: 32px;
+  }
+  .all__title {
+    line-height: 18px;    
+    margin-bottom: 14px;
+  }
+  .all__list {
+    grid-template-rows: repeat(3, 75px);    
+    gap: 10px;
+    font-size: 10px;
+  }    
+  .all__item {        
+    padding-left: 10px;
+  }
+}
+
