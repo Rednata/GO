@@ -2,10 +2,14 @@
   background: linear-gradient(180deg, #1B1A1B 0%, #370A37 100%);
 }
 
+.footer__title {
+  margin-bottom: 50px;
+}
+
 .footer__box {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 142px;
+  margin-bottom: 160px;
   gap: 176px;    
 }
 
@@ -79,6 +83,7 @@
 
 .copyright__contacts {
   text-align: right;
+  line-height: 20px;
 }
 
 .social__link{

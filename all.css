@@ -1,9 +1,10 @@
-.all {
+.all__container {
   margin-bottom: 170px;
 }
 
 .all__title {
   line-height: 50px;
+  margin-bottom: 43px;
 }
 
 .all__title-span {
@@ -72,7 +73,7 @@
   }
   .all__list {    
     grid-template-rows: repeat(2, 172px);
-    gap: 22px 30px;
+    gap: 32px 30px;
   }  
   .all__title {
     line-height: 40px;
