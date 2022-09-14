@@ -1,7 +1,5 @@
 .header {
-  /* font-size: 22px;   */
-  font-size: calc(8px + 1vw);  
-  /* font-size: 1.55vw; */
+  font-size: calc(8px + 1vw);    
 }
 
 .header__burger {

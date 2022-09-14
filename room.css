@@ -70,6 +70,12 @@
 }
 
 @media(max-width:480px) {
+  .room__container {
+    margin-bottom: 30px;
+  }
+  .room-section__title {
+    margin-bottom: 15px;
+  }
   .room__title {
       font-size: 26px;
   }

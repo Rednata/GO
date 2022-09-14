@@ -62,7 +62,6 @@
     margin-bottom: 30px;
   }
   .comment__item {   
-    /* padding-top: 33px;     */
     gap: 38px;
   }
   .comment__item:not(:last-child){
@@ -131,6 +130,12 @@
 }
 
 @media(max-width:480px) {
+  .comment__container {
+    margin-bottom: 71px;
+  }
+  .comment__title {
+    margin-bottom: 13px;
+  }
   .comment__list {
     padding: 0;
   }

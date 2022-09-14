@@ -5,18 +5,11 @@
 .page__header {
     margin-bottom: 43px;
 }
-/* .page__section {
-    margin-bottom: 100px;
-} */
-
 
 @media(max-width:1250px) {
     .page__header {
         margin-bottom: 33px;
     }
-    /* .page__section {
-        margin-bottom: 83px;
-    } */
 }
 
 @media(max-width:860px) {
@@ -26,16 +19,13 @@
     .page__header {
         margin-bottom: 33px;
     }
-    .page__section {
-        /* margin-bottom: 60px; */
-    }
 }
 
 @media(max-width:480px) {
     .page {
         padding-top: 20px;
     }
-    .page__section {
-        margin-bottom: 30px;
+    .page__header {
+        margin-bottom: 23px;
     }
 }

@@ -37,7 +37,6 @@
 
 .blockquote {
   padding-left: 37px;
-  /* font-size: 44px; */
   font-size: 3.06vw;
 }  
   
@@ -129,7 +128,7 @@
   height: 70px;
 }
   .cite__content {
-   font-size: 18px;
+    font-size: 18px;
     line-height: 26px;
   }
 }
@@ -161,9 +160,9 @@
     margin-bottom: 22px;      
   }
   .blockquote__cite {
-   margin-right: 0;
-   margin-left: auto;
-   justify-content: flex-end;
+    margin-right: 0;
+    margin-left: auto;
+    justify-content: flex-end;
   }
 }
 
@@ -177,12 +176,17 @@
   }
   .cite__content {
     font-size: 18px;
-     line-height: 26px;
-   }
+    line-height: 26px;
+  }
 }
 
-
-@media(max-width: 480px) {
+@media(max-width: 650px) {
+  .about__container {
+    margin-bottom: 32px;
+  }
+  .about__title {
+    margin-bottom: 16px;
+  }
   .about__box {  
     grid-template-columns: 1fr;
     grid-template-areas:      
@@ -196,13 +200,12 @@
 }
   .blockquote {
     font-size: 18px;   
+    padding-left: 20px; 
   }
   .blockquote__title {    
     line-height: 26px;    
     padding-left: 0;
-  }
-  .blockquote {
-    padding-left: 20px; 
+    margin-bottom: 19px;
   }
   .blockquote__first-word {
     margin-left: -15px;
@@ -220,11 +223,13 @@
   .blockquote__cite {
     padding: 0;
     margin: 0;
-    margin-left: -15px;
+    margin-left: -21px;
     justify-content: flex-start;
     align-items: center;
   }
   .cite__img {
+    width: 56px;
+    height: 56px;
     margin-right: 11px;
   }
 }
