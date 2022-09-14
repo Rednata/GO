@@ -91,13 +91,20 @@
 }
 
 @media(max-width:1250px) {
+  .about__container {
+    margin-bottom: 70px;
+  }
   .about__box {
     grid-template-columns: 1fr 1.05fr;
     column-gap: 40px;
   }
+  .about__title {
+    margin-bottom: 31px;
+  }
   .about__content {
     font-size: 18px;
-    line-height: 24px;   
+    line-height: 22px; 
+    margin-bottom: 40px;  
   }
   .blockquote {
     padding-left: 25px;
@@ -109,10 +116,18 @@
   .blockquote__title {    
     max-width: 90%;
     line-height: 36px;
-    margin-bottom: 13px;      
+    margin-bottom: 21px;      
   }
 .blockquote__quote-opened+p {
   padding-left: 24px;
+}
+.cite {
+  padding-left: 21%;
+}
+.cite__img {
+  /* margin-right: 30px; */ 
+  width: 70px;
+  height: 70px;
 }
   .cite__content {
    font-size: 18px;

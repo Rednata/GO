@@ -136,8 +136,18 @@
   border: 1px solid var(--firm-color, #440f51);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;  
+  background-size: 94%;  
   }
+
+  .game__input[type="checkbox"]:before {
+    background-size: cover;  
+    }
+  
+
+
+
+
+
 
 .game__input[type="radio"]:before{
   background-image: url("./assets/booking/Ellipse4.svg");
@@ -189,7 +199,7 @@
   border-bottom: 4px solid var(--effect-color1, #6c0287);
   border-right: 4px solid var(--effect-color1, #6c0287);
   left: 0;
-  top: 0%;
+  top: 5%;
   transform: translateX(40%) rotate(45deg);
   opacity: 0;
 }
@@ -383,6 +393,11 @@
 }
 
 @media(max-width:1250px) {
+  .booking {
+    padding-top: 60px;
+    padding-bottom: 62px;
+    margin-bottom: 73px;    
+  }
   .form__title, 
   .form__subtitle {
     font-size: 24px;    

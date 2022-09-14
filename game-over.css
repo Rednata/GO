@@ -1,7 +1,6 @@
 .game-over__container {
   position: relative;
   margin-bottom: 100px;
-  /* padding-bottom: 40px; */
   /* border: 1px solid green; */
 }
 
@@ -160,9 +159,9 @@
 }
 
 @media(max-width:1250px){
-  /* .game-over__container {
-    margin-bottom: 0;
-  } */
+  .game-over__container {
+    margin-bottom: 83px;
+  }
   .game-over__title {
     font-size: 120px;
     line-height: 120px;    

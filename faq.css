@@ -63,6 +63,12 @@
 }
 
 @media(max-width:1250px) {
+  .faq__container {
+    margin-bottom: 70px;
+  }
+  .faq__title {
+    margin-bottom: 30px;
+  }
   .faq__pos {    
     font-size: 20px;
     padding: 12px 20px 12px 30px;    

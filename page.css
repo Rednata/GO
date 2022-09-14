@@ -14,9 +14,9 @@
     .page__header {
         margin-bottom: 33px;
     }
-    .page__section {
+    /* .page__section {
         margin-bottom: 83px;
-    }
+    } */
 }
 
 @media(max-width:860px) {

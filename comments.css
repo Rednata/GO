@@ -55,12 +55,18 @@
 }
 
 @media(max-width:1250px) {
+  .comment__container {
+    margin-bottom: 75px;
+  }
+  .comment__title {
+    margin-bottom: 30px;
+  }
   .comment__item {   
-    padding-top: 33px;    
+    /* padding-top: 33px;     */
     gap: 38px;
   }
   .comment__item:not(:last-child){
-    margin-bottom: 16px;
+    margin-bottom: 38px;
   }
   .comment__img {
     width: 172px;

@@ -111,6 +111,16 @@
 }
 
 @media(max-width:1250px) {
+  .footer__title {
+    margin-bottom: 30px;
+  }
+  .footer__box {
+    gap: 57px;
+    margin-bottom: 125px;
+  }
+  .address {
+    margin-bottom: 43px;
+  }
   .address__geo:before,
   .address__phone:before,
   .address__mail:before {  
