@@ -24,10 +24,10 @@
         padding-top: 32px;
     }
     .page__header {
-        margin-bottom: 3px;
+        margin-bottom: 33px;
     }
     .page__section {
-        margin-bottom: 60px;
+        /* margin-bottom: 60px; */
     }
 }
 

@@ -89,9 +89,13 @@
 }
 
 @media(max-width:860px) {
-  .all {
+  .all__container {
     margin-bottom: 60px;
   }
+  .all__title {
+    margin-bottom: 28px;
+  }
+
   .all__list {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 200px);

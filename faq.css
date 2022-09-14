@@ -95,9 +95,13 @@
 }
 
 @media(max-width:860px) {
+  .faq__container {
+    margin-bottom: 72px;
+  }
   .faq__pos {    
     font-size: 18px;
-    padding: 23px 65px 24px 54px;    
+    padding-left: 54px;
+    padding-right: 65px;    
   }    
 }
 

@@ -50,7 +50,6 @@
 }
 
 .advantage {  
-  font-size: 30px;
   max-width: 194px;
   line-height: 50px;
   text-align: center;
@@ -172,12 +171,10 @@
     line-height: 70px;
   }
   .game-over__list {    
-    gap: 25px;    
-    /* margin-bottom: 148px; */
+    gap: 25px;        
   }
   .advantage {  
     max-width: 168px;
-    font-size: 26px;
   }
   .advantage__title {
     font-size: 80px;
@@ -219,14 +216,26 @@
 }
 
 @media(max-width:860px) {
+  .game-over__container {
+    margin-bottom: 73px;
+  }
   .game-over__title {
     font-size: 86px;    
     line-height: 86px;
   }
   .game-over__subtitle {
     font-size: 18px;
-    margin-bottom: 50px;
+    line-height: 67px;
+    margin-bottom: 28px;
+    padding-left: 70px;
   }  
+  .game-over__list {
+    margin-bottom: 48px;
+  }
+  .game-over__img-box {
+    width: 54%;
+    right: calc(0% + 40px);   /* 40px - padding у game-over__container */
+  }
   .advantage__title {
     font-size: 50px;
     line-height: 70px;
@@ -236,10 +245,23 @@
     line-height: 56px;
   }
   .advantage {  
-    /* max-width: 194px; */
+    max-width: 105px;
     /* line-height: 50px;     */
-    font-size: 16px;
     margin-bottom: 50px;
+  }
+  .advantage__subtitle {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .game-over__btn {
+    min-width: 215px;
+    min-height: 46px; 
+    margin-bottom: 105px;
+    margin-left: 0px;
+  }
+  .game-over__link-btn {    
+    font-size: 16px;
+    padding: 11px 34px;
   }
   .game-over__link-icon {
    display: none;
