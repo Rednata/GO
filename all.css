@@ -83,8 +83,12 @@
   }
   .all__item_audio,
   .all__item_cinema {
-    transform: translateY(53px);    
+    transform: translateY(53px);
   }  
+  .all__item_audio:hover,
+.all__item_cinema:hover {
+  transform:  translateY(53px) scale(1.1);  
+}
 }
 
 @media(max-width:860px) {
