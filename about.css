@@ -57,6 +57,7 @@
 .blockquote__first-word:before,
 .blockquote__span:after {
   font-weight: 900;  
+  color: #6c0287;
   color: var(--effect-color1, #6c0287);
 }
 

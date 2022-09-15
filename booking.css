@@ -1,4 +1,5 @@
 .booking {
+  background-color: #440f51;
   background-color: var(--firm-color, #440f51);
   padding-top: 86px;
   padding-bottom: 73px;
@@ -68,17 +69,20 @@
 
 .choice-room__item:hover {
   background-color: #eadeed;
+  border: 1px solid #640aa3;
   border: 1px solid var(--active-color, #640aa3);
   transition: background-color 0.3s, border 0.3s;
   }
 
 .choice-room__item:focus-within {
   background-color: var(--main-color-text, #ffffff);
+  border: 1px solid #640aa3;
   border: 1px solid var(--active-color, #640aa3);
   transition: background-color 0.3s, border 0.3s;
 }
 
 .choice-room__item:active {
+  background-color: #6c0287;
   background-color: var(--effect-color1, #6c0287);
   border: 1px solid var(--main-color-text, #ffffff);
   color: var(--main-color-text, #ffffff);
@@ -89,6 +93,7 @@
 
 .form__3column {
   display: flex;
+  /* display: grid; */
   justify-content: space-between;
   padding: 0 100px;
   flex-wrap: wrap;
@@ -119,6 +124,7 @@
   transform: translateY(-50%);
   width: 28px;
   height: 28px;
+  border: 1px solid #440f51;
   border: 1px solid var(--firm-color, #440f51);
   background-repeat: no-repeat;
   background-position: center;
@@ -169,6 +175,7 @@
   width: 9px;
   height: 9px;
   border-radius: 50%;
+  background-color: #6c0287;
   background-color: var(--effect-color1, #6c0287);
   transform: translateY(-50%);
 }
@@ -176,7 +183,9 @@
 .game__input[type="checkbox"]:after {
   width: 15px;
   height: 15px;
+  border-bottom: 4px solid #6c0287;
   border-bottom: 4px solid var(--effect-color1, #6c0287);
+  border-right: 4px solid #6c0287;
   border-right: 4px solid var(--effect-color1, #6c0287);
   left: 0;
   top: 5%;
@@ -338,6 +347,7 @@
 .booking__button {
   display: block;
   border: none;  
+  color: #6c0287;
   color: var(--effect-color1, #6c0287);
   font-weight: 700;
   font-size: 22px;
@@ -353,12 +363,14 @@
 
 .booking__button:hover {
   background-color: #eadeed;
+  border: 1px solid #6c0287;
   border: 1px solid var(--effect-color1, #6c0287);
   transition: background-color 0.2s linear, border 0.2s linear;
 }
 
 .booking__button:focus {
   background-color: #ffffff;
+  border: 1px solid #6c0287;
   border: 1px solid var(--effect-color1, #6c0287);
   outline: none;
   transition: background-color 0.2s linear, border 0.2s linear;
@@ -425,7 +437,7 @@
     font-size: 16px;        
     padding: 9px 20px;        
   }  
-  .form__3column {
+  .form__3column {        
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr, 1fr;
@@ -478,7 +490,6 @@
     column-gap: 20px;    
   }
  .form__3column {
-   display: grid;
    grid-template-columns: 1fr;
    row-gap: 37px;
  }

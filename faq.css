@@ -22,6 +22,7 @@
 }
 
 .faq__pos_color  {
+  background-color: #440f51;
   background-color: var(--firm-color, #440f51);
   color: var(--main-color-text, #ffffff);
 }
@@ -77,6 +78,7 @@
     margin-bottom: 16px;
   }
   .faq__pos_color  {
+    background-color: #ffffff;
     background-color: var(--light-color-text);
     color: #1C1A1A;
   }  
