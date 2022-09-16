@@ -164,8 +164,6 @@
 .game__input[type="radio"]:after,
 .game__input[type="checkbox"]:after {
   position: absolute;
-  left: 9px;
-  top: 50%;
   content: "";
   display: block;
   opacity: 0;  
@@ -177,7 +175,10 @@
   border-radius: 50%;
   background-color: #6c0287;
   background-color: var(--effect-color1, #6c0287);
-  transform: translateY(-50%);
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%) translateX(50%);
+  
 }
 
 .game__input[type="checkbox"]:after {
@@ -454,6 +455,17 @@
     width: 40px;
     height: 40px;  
   }
+.game__input[type="radio"]:after {
+  width: 12px;
+  height: 12px;      
+  left: 14px;
+}
+.game__input[type="checkbox"]:after {
+  width: 20px;
+  height: 20px;  
+  left: 2px;
+  top: -8%;    
+}
   .choice__list {
     grid-template-columns: 1fr 1.07fr;
     column-gap: 106px;    
@@ -498,6 +510,17 @@
    width: 30px;
    height: 30px;  
  }
+.game__input[type="radio"]:after {
+  width: 10px;
+  height: 10px;      
+  left: 10px;
+}
+.game__input[type="checkbox"]:after {
+  width: 16px;
+  height: 16px;  
+  left: 0;
+  top: -12%;    
+}
  .game__label {
    font-size: 16px;
  }
