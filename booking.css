@@ -458,7 +458,7 @@
 .game__input[type="radio"]:after {
   width: 12px;
   height: 12px;      
-  left: 14px;
+  left: 8px;
 }
 .game__input[type="checkbox"]:after {
   width: 20px;
@@ -513,7 +513,7 @@
 .game__input[type="radio"]:after {
   width: 10px;
   height: 10px;      
-  left: 10px;
+  left: 5px;
 }
 .game__input[type="checkbox"]:after {
   width: 16px;
