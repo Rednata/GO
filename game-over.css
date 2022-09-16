@@ -23,7 +23,7 @@
 }
 
 .game-over__img-box {
-  width: 57%;
+  width: 56%;
   position: absolute;  
   bottom: 0;
   right: 0;
@@ -218,7 +218,7 @@
     padding-left: 70px;
   }  
   .game-over__list {
-    margin-bottom: 48px;
+    margin-bottom: 100px;
   }
   .game-over__img-box {
     width: 54%;
@@ -247,7 +247,7 @@
   }
   .game-over__link-btn {    
     font-size: 16px;
-    padding: 11px 34px;
+    padding: 10px 35px;
   }
   .game-over__link-icon {
     display: none;
