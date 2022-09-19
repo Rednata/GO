@@ -45,55 +45,70 @@
 }
 
 .choice-room__item {
+  position: relative;
   text-align: center;
   display: block; 
-  background-color: var(--main-color-text, #ffffff);
-  border: 1px solid var(--main-color-text, #ffffff);
+  /* background-color: var(--main-color-text, #ffffff);
+  border: 1px solid var(--main-color-text, #ffffff); */
   border-radius: 8px;
   color: #000000;
   font-weight: 700;
-  font-size: 30px;
-  padding: 7px 0;
+  font-size: 30px;  
   min-width: 21%; 
   text-transform: uppercase;
 }
 
 .choice-room__label {
+  position: absolute;
+  left: 0;
+  display: inline-block;
   vertical-align: middle;
+  border-radius: 10px;
+  background-color: var(--main-color-text, #ffffff);
+  border: 1px solid var(--main-color-text, #ffffff);
+  width: 100%;
+  padding: 7px 0;
 }
 
 .choice-room__input {
-  appearance: none;    /*скрываю  radio */   
+  appearance: none; /*скрываю  radio */   
   outline: none;
 }
 
-.choice-room__item:hover {
+.choice-room__label:hover,
+.game__label:hover {
+  cursor: pointer;
+}
+
+.choice-room__label:hover {  
   background-color: #eadeed;
   border: 1px solid #640aa3;
   border: 1px solid var(--active-color, #640aa3);
   transition: background-color 0.3s, border 0.3s;
   }
 
-.choice-room__item:focus-within {
+.choice-room__label:focus-within {
   background-color: var(--main-color-text, #ffffff);
   border: 1px solid #640aa3;
   border: 1px solid var(--active-color, #640aa3);
   transition: background-color 0.3s, border 0.3s;
 }
 
-.choice-room__item:active {
+/* .choice-room__item:active  */
+.choice-room__label:active,
+.choice-room__input:checked + .choice-room__label
+{
   background-color: #6c0287;
   background-color: var(--effect-color1, #6c0287);
   border: 1px solid var(--main-color-text, #ffffff);
   color: var(--main-color-text, #ffffff);
-  transition: background-color 0.3s, border 0.3s, color 0.3s;
+  transition: background-color 0.1s, border 0.1s, color 0.1s;
 }
 
 /* -------- собери набор развлечений ------------ */
 
 .form__3column {
   display: flex;
-  /* display: grid; */
   justify-content: space-between;
   padding: 0 100px;
   flex-wrap: wrap;
@@ -231,8 +246,7 @@
 
 .date-time__item {
   width: 46%;
-  position: relative;
-  border: 2px solid black;
+  position: relative;  
 }
 
 .date-time__input {
