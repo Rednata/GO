@@ -1,0 +1,31 @@
+.page {
+    padding-top: 30px;
+}
+
+.page__header {
+    margin-bottom: 43px;
+}
+
+@media(max-width:1250px) {
+    .page__header {
+        margin-bottom: 33px;
+    }
+}
+
+@media(max-width:860px) {
+    .page {
+        padding-top: 32px;
+    }
+    .page__header {
+        margin-bottom: 33px;
+    }
+}
+
+@media(max-width:480px) {
+    .page {
+        padding-top: 20px;
+    }
+    .page__header {
+        margin-bottom: 23px;
+    }
+}

@@ -1,0 +1,235 @@
+.footer {
+  background: linear-gradient(180deg, #1B1A1B 0%, #370A37 100%);
+}
+
+.footer__title {
+  margin-bottom: 50px;
+}
+
+.footer__box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 160px;
+  gap: 176px;    
+}
+
+.address {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 35px;  
+}
+
+.footer__img {
+  width: 100%;
+  background-image: url("./assets/footer/map.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.address__geo {
+  display: flex;
+  align-items: center;  
+  margin-bottom: 40px;
+}
+
+.address__phone {
+  margin-bottom: 11px;
+}
+
+.address__geo:before,
+.address__phone:before,
+.address__mail:before {
+  display: inline-block;    
+  content: "";    
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 32px;
+  height: 32px;
+  margin-right: 28px;
+}
+
+.address__geo:before {
+  background-image: url("./assets/footer/location.svg");
+}
+
+.address__phone:before {
+  background-image: url("./assets/footer/phone-call.svg");
+}
+
+.address__mail:before {
+  background-image: url("./assets/footer/mail.svg");
+}
+
+.address__mail,
+.address__phone {
+  display: flex;
+}
+
+.social {
+  display: flex;
+  gap: 26px;
+}
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 16px;
+  padding-bottom: 20px;
+}
+
+.copyright__contacts {
+  text-align: right;
+  line-height: 20px;
+}
+
+.social__link{
+  display: flex;
+  align-items: center;
+  border: 1px solid #370A37;
+}
+
+.social__link:hover {
+  color: #eadeed;
+  transition: color 0.3s;
+}
+
+.social__link:focus {
+  color: #eadeed;
+  border: 1px solid var(--accent-color, #cd06ff);
+  outline: none;
+  transition: color 0.3s, border 0.3s;
+}
+
+.social__link:active {
+  color: var(--accent-color, #cd06ff);
+  border: 1px solid #370A37;
+  transition: color 0.3s, border 0.3s;
+}
+
+@media(max-width:1250px) {
+  .footer__title {
+    margin-bottom: 30px;
+  }
+  .footer__box {
+    gap: 57px;
+    margin-bottom: 125px;
+  }
+  .address {
+    margin-bottom: 43px;
+  }
+  .address__geo:before,
+  .address__phone:before,
+  .address__mail:before {  
+  width: 26px;
+  height: 26px;
+  margin-right: 14px;
+}
+  .social__item {
+    width: 40px;
+    height: 40px;
+  }    
+}
+
+@media(max-width:860px) {
+  .footer__box {
+    flex-direction: column;
+    align-items: center;      
+    margin-bottom: 75px;
+    gap: 30px;
+  }
+  .footer__title {
+    margin-bottom: 32px;
+  }
+  .footer__img {
+    min-height: 337px;
+  }
+  .address {
+    margin-bottom: 30px;
+  }
+  .address__geo:before {
+    content:none;
+  } 
+  .address__geo {
+    justify-content: center;
+    margin-bottom: 33px;
+  }
+  .address__geo-icon:before,
+  .address__phone:before,
+  .address__mail:before {  
+    margin-right: 17px;
+}
+  .address__geo-icon:before {
+    display: inline-block; 
+    content: "";    
+    background-image: url("./assets/footer/location.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 26px;
+    height: 26px;
+  }
+  .address__phone,
+  .social {
+    justify-content: center;    
+  }
+  .address__phone {
+    margin-bottom: 26px;
+  }  
+}
+
+@media(max-width:480px) {
+  .footer__title {
+    margin-bottom: 10px;
+  }
+  .footer__box {
+      flex-direction: column;
+      align-items: center;      
+      margin-bottom: 64px;
+  }
+  .address {
+    font-size: 14px;
+    margin-bottom: 7px;
+  }    
+  .footer__img {
+    min-height: 194px;
+  } 
+  .address__geo {
+    margin-bottom: 13px;
+  }
+  .address__phone {
+    margin-bottom: 10px;
+  }
+  .address {
+    margin-bottom: 10px;
+  }
+  .address__geo-icon:before,
+  .address__phone:before,
+  .address__mail:before {  
+    width: 20px;
+    height: 20px;    
+    margin-right: 8px;
+  }
+  .social__item {
+    width: 30px;
+    height: 30px;
+  } 
+  .copyright {
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+  }
+  .copyright>p {
+    margin-bottom: 19px;
+  }
+  .copyright__contacts {
+    text-align: center;
+  }
+  .copyright__contacts>p {
+    margin-bottom: 5px;
+  }
+}
+
