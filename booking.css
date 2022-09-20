@@ -94,8 +94,6 @@
   transition: background-color 0.3s, border 0.3s;
 }
 
-/* .choice-room__item:active  */
-.choice-room__label:active,
 .choice-room__input:checked + .choice-room__label
 {
   background-color: #6c0287;
