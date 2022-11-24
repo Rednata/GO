@@ -119,7 +119,7 @@
   position: absolute;
   width: 97px;
   height: 97px;
-  background-image: url("./assets/game-over/down.svg");
+  background-image: url("../assets/game-over/down.svg");
   background-repeat: no-repeat;
   box-sizing: content-box;
   border: 1px solid transparent;  
@@ -129,19 +129,19 @@
 }
 
 .game-over__link-icon:hover{
-  background-image: url("./assets/game-over/downHover.svg");
+  background-image: url("../assets/game-over/downHover.svg");
   animation: anim-opacity 0.5s linear; 
 }
 
 .game-over__link-icon:focus{
-  background-image: url("./assets/game-over/down.svg");
+  background-image: url("../assets/game-over/down.svg");
   border: 1px solid var(--accent-color, #cd06ff);
   outline: none;
   animation: anim-opacity 0.1s; 
 }
 
 .game-over__link-icon:active{
-  background-image: url("./assets/game-over/downActive.svg");
+  background-image: url("../assets/game-over/downActive.svg");
   border: none;
   transition: background-image 0.5s;
 }

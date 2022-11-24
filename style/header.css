@@ -78,7 +78,6 @@
 }
 
 @media(max-width:480px) {
-  .header__form,
   .header__btn {
     display: none;
   }

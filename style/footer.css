@@ -22,7 +22,7 @@
 
 .footer__img {
   width: 100%;
-  background-image: url("./assets/footer/map.jpg");
+  background-image: url("../assets/footer/map.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -52,15 +52,15 @@
 }
 
 .address__geo:before {
-  background-image: url("./assets/footer/location.svg");
+  background-image: url("../assets/footer/location.svg");
 }
 
 .address__phone:before {
-  background-image: url("./assets/footer/phone-call.svg");
+  background-image: url("../assets/footer/phone-call.svg");
 }
 
 .address__mail:before {
-  background-image: url("./assets/footer/mail.svg");
+  background-image: url("../assets/footer/mail.svg");
 }
 
 .address__mail,
@@ -165,7 +165,7 @@
   .address__geo-icon:before {
     display: inline-block; 
     content: "";    
-    background-image: url("./assets/footer/location.svg");
+    background-image: url("../assets/footer/location.svg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
