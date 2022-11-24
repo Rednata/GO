@@ -1,10 +1,14 @@
-.overlay-modal {
+.overlay-modal {  
   position: absolute;
   top: 0;
   height: 100%;
   width: 100%;
   background-color: var(--overlay-color);  
   padding: 145px 20px;
+}
+
+.overlay-modal_invisible {
+  display: none;
 }
 
 .modal-form {

@@ -11,6 +11,9 @@
   justify-content: space-between;
   gap: 30px;
   align-items: center;
+  border: none;
+  width: 100%;
+  text-align: left;
   background-color: var(--main-color-text, #ffffff);  
   font-weight: 700;
   font-size: 24px;
@@ -19,11 +22,11 @@
 }
 
 .faq-item__content {
-  display: none;
+  display: none;    
   background-color: var(--light-color-text);
   color: #000000;
   font-size: 24px;
-  padding: 21px 70px 100px;
+  padding: 21px 70px 100px;  
 }
 
 .faq-item__content_active {
@@ -41,6 +44,7 @@
 }
 
 .faq-item__img {
+  display: block;
   width: 46px;
   height: 46px;
   background-size: contain;
@@ -49,31 +53,29 @@
 }
 
 .faq-item__img_color {
-  background-image: url("../assets/faq/openPurple.svg");
+  background-image: url("../assets/faq/closePurple.svg");
 }
 
 .faq-item__img_white {
-  background-image: url("../assets/faq/openWhite.svg");
+  background-image: url("../assets/faq/closeWhite.svg");
+}
+
+.faq-item__img_color-active {
+  background-image: url("../assets/faq/openActivePurple.svg");
+}
+
+.faq-item__img_white-active {
+  background-image: url("../assets/faq/openActiveWhite.svg");
 }
 
 .faq-item__img_color:hover{
-  background-image: url("../assets/faq/openHoverPurple.svg");
+  background-image: url("../assets/faq/closeHoverPurple.svg");
   transition: background-image 0.3s;
-}
-
-.faq-item__img_color:active {
-  background-image: url("../assets/faq/closeActivePurple.svg");
-  animation: anim-opacity 0.3s linear;
 }
 
 .faq-item__img_white:hover {
-  background-image: url("../assets/faq/openHoverWhite.svg");
+  background-image: url("../assets/faq/closeHoverWhite.svg");
   transition: background-image 0.3s;
-}
-
-.faq-item__img_white:active {
-  background-image: url("../assets/faq/openActiveWhite.svg");
-  animation: anim-opacity 0.3s linear;
 }
 
 @media(max-width:1250px) {
@@ -96,23 +98,6 @@
   .faq__item:not(:last-child){
     margin-bottom: 16px;
   }
-  /* .faq__pos_color  {
-    background-color: #ffffff;
-    background-color: var(--light-color-text);
-    color: #1C1A1A;
-  }   */
-  /* .faq__pos_none {
-    display: none;
-  } */
-  /* .faq__img_white {
-    background-image: url("../assets/faq/openPurple.svg");
-  }
-  .faq__img_white:hover {
-    background-image: url("../assets/faq/openHoverPurple.svg");    
-  }
-  .faq__img_white:active {
-    background-image: url("../assets/faq/closeActivePurple.svg");    
-  } */
 }
 
 @media(max-width:860px) {

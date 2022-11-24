@@ -6,6 +6,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <script src="./scripts/script.js" defer></script>
   <link rel="stylesheet" href="./index.css">
 </head>
 <body class="page">
@@ -35,9 +36,7 @@
             </li>
           </ul>
         </nav>
-        <form class="header__form" action="https://jsonplaceholder.typicode.com/posts" method="post">
-          <button class="header__btn" type="submit">заказать звонок</button>
-        </form>
+          <button class="header__btn">заказать звонок</button>
       </div>
     </div>
   </header>
@@ -409,48 +408,36 @@
           <h2 class="faq__title title">Частые вопросы</h2>
           <ul  class="faq__list">
             <li class="faq-item">
-              <div class="faq-item__header">
-                <p class="faq-item__title">
-                  Можно ли забронировать комнату онлайн?
-                </p>
+              <button class="faq-item__header">Можно ли забронировать комнату онлайн?
                 <span class="faq-item__img faq-item__img_color"></span>
-              </div>              
-              <p class="faq-item__content  faq-item__content_active">
+              </button>
+              <p class="faq-item__content">
                 Да, забронировать комнату вы можете онлайн, заполнив форму на нашем сайте. Также вы можете забронировать комнату позвонив по телефону 8 (999) 958 - 48 - 38
               </p>
             </li>
-
+            
             <li class="faq-item">
-              <div class="faq-item__header faq-item__header_color">
-                <p class="faq-item__title">
-                  Могут ли мне вернуть деньги за бронь?
-                </p>
+              <button class="faq-item__header faq-item__header_color">Могут ли мне вернуть деньги за бронь?
                 <span class="faq-item__img faq-item__img_white"></span>
-              </div>              
+              </button>
               <p class="faq-item__content">
                 Да, забронировать комнату вы можете онлайн, заполнив форму на нашем сайте. Также вы можете забронировать комнату позвонив по телефону 8 (999) 958 - 48 - 38
               </p>
             </li>
 
             <li class="faq-item">
-              <div class="faq-item__header">
-                <p class="faq-item__title">
-                  Какая комната самая популярная?
-                </p>
+              <button class="faq-item__header">Какая комната самая популярная?
                 <span class="faq-item__img faq-item__img_color"></span>
-              </div>              
+              </button>
               <p class="faq-item__content">
                 Да, забронировать комнату вы можете онлайн, заполнив форму на нашем сайте. Также вы можете забронировать комнату позвонив по телефону 8 (999) 958 - 48 - 38
               </p>
             </li>
-
+            
             <li class="faq-item">
-              <div class="faq-item__header faq-item__header_color">
-                <p class="faq-item__title">
-                  Как получить VIP карту?
-                </p>
+              <button class="faq-item__header faq-item__header_color">Как получить VIP карту?
                 <span class="faq-item__img faq-item__img_white"></span>
-              </div>              
+              </button>
               <p class="faq-item__content">
                 Да, забронировать комнату вы можете онлайн, заполнив форму на нашем сайте. Также вы можете забронировать комнату позвонив по телефону 8 (999) 958 - 48 - 38
               </p>
@@ -548,10 +535,10 @@
       </div>
     </footer>
 
-    <!-- <div class="overlay-modal">      
-      <form class="modal-form" action="" method="">
+    <div class="overlay-modal overlay-modal_invisible">      
+      <form action="https://jsonplaceholder.typicode.com/posts" method="post" class="modal-form" >
         <div class="modal-form__inner">
-          <button class="modal-form__close btn__close">
+          <button class="modal-form__close btn__close" type="button">
             <span class="close close_first"></span>
             <span class="close close_second"></span>
           </button>
@@ -570,7 +557,7 @@
         </div>        
       </form>
 
-    </div> -->
+    </div>
 
 </body>
 </html>
