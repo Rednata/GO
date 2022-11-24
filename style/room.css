@@ -23,16 +23,16 @@
 }
 
 .room__item_vibes {
-  background-image: url("./assets/room/80-sVibes.jpg");
+  background-image: url("../assets/room/80-sVibes.jpg");
 }
 .room__item_star {
-  background-image: url("./assets/room/starWars.jpg");
+  background-image: url("../assets/room/starWars.jpg");
 }
 .room__item_west {
-  background-image: url("./assets/room/wildWest.jpg");
+  background-image: url("../assets/room/wildWest.jpg");
 }
 .room__item_neon {
-  background-image: url("./assets/room/neon.jpg");
+  background-image: url("../assets/room/neon.jpg");
 }
 
 .room__title {

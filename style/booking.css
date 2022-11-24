@@ -149,11 +149,11 @@
     }
   
 .game__input[type="radio"]:before{
-  background-image: url("./assets/booking/Ellipse4.svg");
+  background-image: url("../assets/booking/Ellipse4.svg");
 }
 
 .game__input[type="checkbox"]:before{
-  background-image: url("./assets/booking/Rectangle38.svg");
+  background-image: url("../assets/booking/Rectangle38.svg");
 }
 
 .game__input[type="checkbox"]:focus-within:before {
