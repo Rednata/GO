@@ -6,7 +6,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-  <link rel="stylesheet" href="index.css">
+  <script src="./scripts/script.js" defer></script>
+  <link rel="stylesheet" href="./index.css">
 </head>
 <body class="page">
   <header class="header page__header">
@@ -35,14 +36,13 @@
             </li>
           </ul>
         </nav>
-        <form class="header__form" action="https://jsonplaceholder.typicode.com/posts" method="post">
-          <button class="header__btn" type="submit">заказать звонок</button>
-        </form>
+          <button class="header__btn">заказать звонок</button>
       </div>
     </div>
   </header>
 
     <main>
+
       <section class="game-over">
         <div class="container game-over__container">
           <h1 class="game-over__title">Game over
@@ -407,21 +407,42 @@
         <div class="container faq__container">
           <h2 class="faq__title title">Частые вопросы</h2>
           <ul  class="faq__list">
-            <li class="faq__pos">Можно ли забронировать комнату онлайн?
-              <div class="faq__img faq__img_purple"></div>
+            <li class="faq-item">
+              <button class="faq-item__header">Можно ли забронировать комнату онлайн?
+                <span class="faq-item__img faq-item__img_color"></span>
+              </button>
+              <p class="faq-item__content">
+                Да, забронировать комнату вы можете онлайн, заполнив форму на нашем сайте. Также вы можете забронировать комнату позвонив по телефону 8 (999) 958 - 48 - 38
+              </p>
             </li>
-            <li class="faq__pos faq__pos_color">Могут ли мне вернуть деньги за бронь?
-              <div class="faq__img faq__img_white"></div>
+            
+            <li class="faq-item">
+              <button class="faq-item__header faq-item__header_color">Могут ли мне вернуть деньги за бронь?
+                <span class="faq-item__img faq-item__img_white"></span>
+              </button>
+              <p class="faq-item__content">
+                Да, забронировать комнату вы можете онлайн, заполнив форму на нашем сайте. Также вы можете забронировать комнату позвонив по телефону 8 (999) 958 - 48 - 38
+              </p>
             </li>
-            <li class="faq__pos">Какая комната самая популярная?
-              <div class="faq__img faq__img_purple"></div>
+
+            <li class="faq-item">
+              <button class="faq-item__header">Какая комната самая популярная?
+                <span class="faq-item__img faq-item__img_color"></span>
+              </button>
+              <p class="faq-item__content">
+                Да, забронировать комнату вы можете онлайн, заполнив форму на нашем сайте. Также вы можете забронировать комнату позвонив по телефону 8 (999) 958 - 48 - 38
+              </p>
             </li>
-            <li class="faq__pos faq__pos_color">Как получить VIP карту?
-              <div class="faq__img faq__img_white"></div>
+            
+            <li class="faq-item">
+              <button class="faq-item__header faq-item__header_color">Как получить VIP карту?
+                <span class="faq-item__img faq-item__img_white"></span>
+              </button>
+              <p class="faq-item__content">
+                Да, забронировать комнату вы можете онлайн, заполнив форму на нашем сайте. Также вы можете забронировать комнату позвонив по телефону 8 (999) 958 - 48 - 38
+              </p>
             </li>
-            <li class="faq__pos faq__pos_none ">Какая комната самая популярная?
-              <div class="faq__img faq__img_purple"></div>
-            </li>
+
           </ul>
 
         </div>
@@ -513,5 +534,30 @@
 
       </div>
     </footer>
+
+    <div class="overlay-modal overlay-modal_invisible">      
+      <form action="https://jsonplaceholder.typicode.com/posts" method="post" class="modal-form" >
+        <div class="modal-form__inner">
+          <button class="modal-form__close btn__close" type="button">
+            <span class="close close_first"></span>
+            <span class="close close_second"></span>
+          </button>
+          <h2 class="modal-form__title">Заказать звонок</h2>
+          <label class="modal-form__label">
+            Имя
+            <input type="text" class="modal-form__input">
+          </label>
+          <label class="modal-form__label">
+            Телефон
+            <input type="tel" class="modal-form__input">
+          </label>
+          <button class="modal-form__btn-submit">
+            Позвонить мне
+          </button>
+        </div>        
+      </form>
+
+    </div>
+
 </body>
 </html>
