@@ -1,0 +1,10 @@
+{
+  "name": "go",
+  "scripts": {},
+  "dependencies": {
+    "swiper": "^9.0.1"
+  },
+  "devDependencies": {
+    "parcel": "^2.8.3"
+  }
+}

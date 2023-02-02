@@ -4,3 +4,8 @@
   gap: 40px;
 }
 
+@media(max-width:1250px) {
+  .nav__list {
+    gap: 20px;
+  }
+}
