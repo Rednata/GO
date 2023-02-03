@@ -4,9 +4,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <script src="./script/swiper-bundle.min.js" defer></script>
   <script src="./script/rooms.js" type="module"></script>
-  <link rel="stylesheet" href="./index.css">
+
   <link rel="stylesheet" href="./style/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./index.css">
   
   <title>Game over</title>
 </head>
@@ -74,36 +77,34 @@
         </div>  
       </div>      
     </section>
-
-    <!-- <section class="rooms-other">
-      <div class="container">
-        <h2 class="rooms__subtitle">
-          Другие комнаты
-        </h2>
-        <div class="swiper">
-          <div class="swiper-wrapper rooms-other__slider">
-            <div class="swiper-slide slide">              
-              <img src="./assets/rooms_main/wild_west_mini.jpg" alt="" class="swiper__img">              
-            </div>
-            <div class="swiper-slide slide">            
-              <img swiper-slide slide src="./assets/rooms_main/star_wars_mini.jpg" alt="" class="">
-            </div>
-            
-            <div class="swiper-slide slide">
-              <img src="./assets/rooms_main/neon_style_mini.jpg" alt="" class="swiper__img">            
-            </div>
-            <div class="swiper-slide slide">
-              <img src="./assets/rooms_main/80s_vibes_mini.jpg" alt="" class="swiper__img">
-            </div>            
+    
+    <section class="rooms-other container">
+      <h2 class="rooms__subtitle">
+        Другие комнаты
+      </h2>
+      <div class="swiper">
+        
+        <div class="swiper-wrapper">      
+          <div class="swiper-slide">
+            <img class="swiper__img" src="./assets/rooms_main/wild_west_mini.jpg" alt="" >              
           </div>
-          
+          <div class="swiper-slide">
+            <img class="swiper__img" src="./assets/rooms_main/star_wars_mini.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img class="swiper__img" src="./assets/rooms_main/neon_style_mini.jpg" alt="" >            
+          </div>
+          <div class="swiper-slide">
+            <img class="swiper__img" src="./assets/rooms_main/80s_vibes_mini.jpg" alt="">
+          </div>
         </div>
+    
       </div>
-      
-    </section> -->
+    </section>
+  
   </main>
 
-  <!-- <footer class="footer page__footer">
+  <footer class="footer page__footer">
     <div class="container">
       <h2 class="footer__title title" id="contacts">Контакты</h2>
       
@@ -125,8 +126,6 @@
               <li class="address__mail">
                 <a href="mailto:GameOver@gmail.com">GameOver@gmail.com</a>
               </li>
-
-
               
             </ul>
 
@@ -187,7 +186,7 @@
       </div>
 
     </div>
-  </footer> -->
+  </footer>
 
 </body>
 </html>

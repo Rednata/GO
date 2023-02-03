@@ -1,4 +1,4 @@
-import Swiper from 'swiper/swiper-bundle';
+// import Swiper from 'swiper/swiper-bundle';
 
 new Swiper('.swiper', {
   loop: true,
@@ -12,18 +12,21 @@ new Swiper('.swiper', {
       direction: 'vertical',
     },
     // when window width is >= 480px
-    600: {
+    480: {
       direction: 'horizontal',
       slidesPerView: 2,
       spaceBetween: 8,
 
     },
-    // when window width is >= 640px
-    1000: {
+    650: {
       slidesPerView: 3,
-      spaceBetween: 50,
+      spaceBetween: 15,
+    },
+    // when window width is >= 1000px
+    1000: {
+      
+      spaceBetween: 20,
     }
   }
 });
-
 
