@@ -1,17 +1,37 @@
-.header {
-  font-size: calc(8px + 1vw);    
+.header {  
+  font-size: calc(8px + 1vw);     
+}
+
+.header__box {
+  display: grid;  
+  grid-template-areas: "logo nav btn";    
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  gap: 10px;    
+
 }
 
 .header__burger-icon {
+  grid-area: burger;
   display: none;
   width: 54px;
+  height: 29px;
+  background-color: transparent;
+  border: none;
+  background-image: url("../assets/header/menu.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  align-self: center;
 }
 
 .logo {
+  grid-area: logo;
   width: 120px;
 }
 
 .header__btn {
+  grid-area: btn;
   border: 3px solid #CD06FF;
   border: 3px solid var(--bright-accent-color);
   border-radius: 10px;
@@ -20,15 +40,7 @@
   font-size: 22px;
   text-transform: uppercase;
   padding: 12px 32px;
-  outline: none;
-}
-
-.header__box {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-transform: uppercase;
-  gap: 10px;  
+  outline: none;  
 }
 
 .header__btn:hover, 
@@ -46,6 +58,48 @@
   border: 3px solid #640aa3;
   border: 3px solid var(--active-color, #640aa3);
   transition: background-color 0.2s, border 0.2s;
+}
+
+.overlay-burger {
+  display: none;  
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;  
+  width: 100%;
+  background-color: var(--overlay-color);
+  z-index: 10;
+  margin: 0 auto;    
+}
+
+.overlay-burger_active {
+  display: block;
+}
+
+.header__box.header__box_burger {
+  position: absolute;
+  top:0;
+  left: 0;  
+  width: 100%;
+  z-index: 20;
+  display: grid;    
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  gap: 10px; 
+  grid-template-areas: 
+  "burger logo btn"
+  "nav nav nav"
+  "nav nav nav";  
+  background-color: var(--bg-color);
+  padding: 32px 40px; 
+}
+
+.nav.nav_burger {
+  grid-area: nav;
+  display: block;
+  padding-top: 58px;
+  padding-bottom: 39px;  
 }
 
 @media(max-width:1250px) {
@@ -68,25 +122,44 @@
 }
 
 @media(max-width:860px) {
+  .header__box {
+    grid-template-areas: "burger logo btn";
+    align-items: flex-end;
+  }
   .header__burger-icon {
     display: block;
   }
   .nav {
     display: none;
-  }
-  .header__box {
-    align-items: flex-end;
-  }
+
+  }  
 }
 
 @media(max-width:480px) {
-  .header__btn {
-    display: none;
+  .header__box.header__box_burger {
+    grid-template-areas: 
+      "burger logo"
+      "nav nav"
+      "btn btn";    
   }
   .logo {
     width: 66px;
   }
   .header__burger-icon {
     width: 39px;
+  }
+  .header__btn {
+    display: none;
+  }
+  .header__btn_burger {
+    display: block;
+    width: 190px;    
+    font-size: 14px;
+    justify-self: center;
+
+  }
+  .nav.nav_burger {
+    padding-top: 36px;
+    padding-bottom: 38px;
   }
 }

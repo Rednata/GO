@@ -5,63 +5,49 @@
   <title>Game over</title>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">    
-  <!-- <script src="./script.js" type="module"></script> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <script src="./script/swiper-bundle.min.js" defer></script>
+  <script src="./script.js" type="module"></script>  
+
+  
+  <link rel="stylesheet" href="./style/swiper-bundle.min.css">
   <link rel="stylesheet" href="./index.css">
 </head>
 <body class="page">
 
-  <div class="overlay-burger">
-    <div class="burger">
-      <ul class="nav__list nav__list_burger">
-        <li class="nav__item">
-          <a href="#rooms" class="nav__link">залы</a>
-        </li>
-        <li class="nav__item">
-          <a href="#about" class="nav__link">О нас</a>
-        </li>
-        <li class="nav__item">
-          <a href="#booking" class="nav__link">Бронь</a>
-        </li>
-        <li class="nav__item">
-          <a href="#comment" class="nav__link">отзывы</a>
-        </li>
-        <li class="nav__item">
-          <a href="#contacts" class="nav__link">Контакты</a>
-        </li>
-      </ul>            
-    </div>
-  </div>
-
   <header class="header page__header">
+    
     <div class="container">
-      <div class="header__box">
-        <div class="header__burger-icon burger-icon">
-          <img class="burger__img" src="./assets/header/menu.svg" alt="бургер-меню">
-        </div>
-        <a href="https://rednata.github.io/GO/" class="logo"><img src="./assets/header/logo_light.svg" alt="логотип"></a>
-
-        <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#rooms" class="nav__link">залы</a>
-            </li>
-            <li class="nav__item">
-              <a href="#about" class="nav__link">О нас</a>
-            </li>
-            <li class="nav__item">
-              <a href="#booking" class="nav__link">Бронь</a>
-            </li>
-            <li class="nav__item">
-              <a href="#comment" class="nav__link">отзывы</a>
-            </li>
-            <li class="nav__item">
-              <a href="#contacts" class="nav__link">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-          <button class="header__btn">заказать звонок</button>
+      <div class="overlay-burger">
       </div>
+        <div class="header__box">          
+            <button class="header__burger-icon burger-icon">          
+            </button>
+            <a href="https://rednata.github.io/GO/" class="logo"><img src="./assets/header/logo_light.svg" alt="логотип"></a>
+    
+            <nav class="nav">        
+              <ul class="nav__list">              
+                <li class="nav__item">
+                  <a href="#rooms" class="nav__link">залы</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#about" class="nav__link">О нас</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#booking" class="nav__link">Бронь</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#comment" class="nav__link">отзывы</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#contacts" class="nav__link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+              <button class="header__btn">заказать звонок</button>
+          </div>
+      </div>
+      
     </div>
   </header>
 
@@ -134,30 +120,38 @@
         </div>
       </section>
 
-      <section class="room" id="rooms">
-        <div class="container room__container">
-          <h2 class="room-section__title title">
-            Наши залы
-          </h2>
-          <ul class="room__list">
-            <li class="room__item room__item_vibes">
-              <p class="room__title">80's</p>
-              <p class="room__title">vibes</p>
-            </li>
-            <li class="room__item room__item_star">
-              <p class="room__title">star</p>
-              <p class="room__title">wars</p>
-            </li>
-            <li class="room__item room__item_west">
-              <p class="room__title">wild</p>
-              <p class="room__title">west</p>
-            </li>
-            <li class="room__item room__item_neon">
-              <p class="room__title">neon</p>
-              <p class="room__title">style</p>
-            </li>
-          </ul>
-        </div>
+      <section class="room" id="rooms">        
+          <div class="container room__container">
+            <h2 class="room-section__title title">
+              Наши залы
+            </h2>
+            <ul class="room__list">
+              <li>
+                <a class="room__link room__link_vibes" href="./roomVibe.html" target="_blank" data-room="vibes">
+                  <p class="room__title">80's</p>
+                  <p class="room__title">vibes</p>
+                </a>                
+              </li>
+              <li>
+                <a class="room__link room__link_star" href="./roomStar.html" target="_blank" data-room="star">
+                  <p class="room__title">star</p>
+                  <p class="room__title">wars</p>
+                </a>                
+              </li>
+              <li>
+                <a class="room__link room__link_west" href="./roomWest.html" target="_blank" data-room="west">
+                  <p class="room__title">wild</p>
+                  <p class="room__title">west</p>
+                </a>                
+              </li>
+              <li>
+                <a class="room__link room__link_neon" href="./roomNeon.html" target="_blank" data-room="neon">
+                  <p class="room__title">neon</p>
+                  <p class="room__title">style</p>
+                </a>                
+              </li>
+            </ul>
+          </div>                
 
       </section>
 
@@ -569,11 +563,11 @@
           <h2 class="modal-form__title">Заказать звонок</h2>
           <label class="modal-form__label">
             Имя
-            <input type="text" class="modal-form__input">
+            <input type="text" class="modal-form__input inputName" name="name">
           </label>
           <label class="modal-form__label">
             Телефон
-            <input type="tel" class="modal-form__input">
+            <input type="tel" class="modal-form__input inputPhone" name="phone">
           </label>
           <button class="modal-form__btn-submit">
             Позвонить мне

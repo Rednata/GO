@@ -4,16 +4,36 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
   <script src="./script/swiper-bundle.min.js" defer></script>
-  <script src="./script/rooms.js" type="module"></script>
-
+  <script src="./script.js" type="module"></script>  
   <link rel="stylesheet" href="./style/swiper-bundle.min.css">
   <link rel="stylesheet" href="./index.css">
   
   <title>Game over</title>
 </head>
 <body class="page">
+
+  <div class="overlay-burger">
+    <div class="burger">
+      <ul class="nav__list nav__list_burger">
+        <li class="nav__item">
+          <a href="#rooms" class="nav__link">залы</a>
+        </li>
+        <li class="nav__item">
+          <a href="#about" class="nav__link">О нас</a>
+        </li>
+        <li class="nav__item">
+          <a href="#booking" class="nav__link">Бронь</a>
+        </li>
+        <li class="nav__item">
+          <a href="#comment" class="nav__link">отзывы</a>
+        </li>
+        <li class="nav__item">
+          <a href="#contacts" class="nav__link">Контакты</a>
+        </li>
+      </ul>            
+    </div>
+  </div>
 
   <header class="header header__rooms">
     <div class="container">
@@ -51,11 +71,11 @@
   <main>
     <section class="rooms-main container">
       <div class="rooms-main__img-wrap">        
-        <h1 class="rooms-main__title">80’s vibes</h1>        
-        <img src="./assets/rooms_main/banner1440.jpg" alt="старые игровые автоматы на фоне потертой кирпичной стены" class="rooms-main__img">        
+        <h1 class="rooms-main__title">neon style</h1>        
+        <img src="./assets/rooms_main/banner_Neon.jpg" alt="старые игровые автоматы на фоне потертой кирпичной стены" class="rooms-main__img">        
       </div>            
         <p class="rooms-main__descript">
-          Вы окунетесь в незабываемую атмосферу Америки 80-х годов, стилевая музыка, кассеты и магнитофоны. Одевайтесь ярко, берите с собой хорошее настроение и устройте большую вечеринку!
+          Неоновый свет, кислотный диджей, кеды и фотолюминесценция футболки. Если вы любитель темных комнат, музыкального драйва и светящейся одежды, то вы точно знаете что сегодня надеть. 
         </p>      
     </section>
 
@@ -65,13 +85,13 @@
           Что есть в комнате?
         </h2>
         <div class="rooms-what__inner">
-          <img class="rooms-what__img" src="./assets/rooms_main/80VibesMINI.jpg" alt="" >
+          <img class="rooms-what__img" src="./assets/rooms_main/miniNeon.jpg" alt="" >
           <div class="rooms-what__descript-wrap">
-            <p class="rooms-what__descript">
-              В комнате 80-х есть игровые автоматы, магнитофоны, виниловые пластинки и мини кинотеатр. 
+            <p class="rooms-what__descript rooms-what__descript_top">
+              Вы сможете встать у диджейского пульта и создать свой сет, который порадует остальных участников комнаты...или нет. 
             </p>
-            <p class="rooms-what__descript-wrap">
-              Также вы можете выбрать игровую приставку, настольные игры, VR и караоке.
+            <p class="rooms-what__descript-wrap rooms-what__descript-wrap_bottom">
+              В комнате также присутствует большое предметов с элементами фосфора, включая игровые консоли, стулья и диваны. Вы точно не потеряетесь внутри.
             </p>
           </div>          
         </div>  
@@ -82,20 +102,27 @@
       <h2 class="rooms__subtitle">
         Другие комнаты
       </h2>
-      <div class="swiper">
-        
+      <div class="swiper">        
         <div class="swiper-wrapper">      
           <div class="swiper-slide">
-            <img class="swiper__img" src="./assets/rooms_main/wild_west_mini.jpg" alt="" >              
+            <a href="./roomWest.html">
+              <img class="swiper__img" src="./assets/rooms_main/slider_west.jpg" alt="" >              
+            </a>            
           </div>
           <div class="swiper-slide">
-            <img class="swiper__img" src="./assets/rooms_main/star_wars_mini.jpg" alt="">
+            <a href="./roomStar.html">
+              <img class="swiper__img" src="./assets/rooms_main/slider_star.jpg" alt="">
+            </a>            
           </div>
           <div class="swiper-slide">
-            <img class="swiper__img" src="./assets/rooms_main/neon_style_mini.jpg" alt="" >            
+            <a href="./roomNeon.html">
+              <img class="swiper__img" src="./assets/rooms_main/slider_neon.jpg" alt="" >            
+            </a>            
           </div>
           <div class="swiper-slide">
-            <img class="swiper__img" src="./assets/rooms_main/80s_vibes_mini.jpg" alt="">
+            <a href="./roomVibe.html">
+              <img class="swiper__img" src="./assets/rooms_main/slider_Vibe.jpg" alt="">
+            </a>            
           </div>
         </div>
     
@@ -187,6 +214,30 @@
 
     </div>
   </footer>
+
+  <div class="overlay-modal overlay-modal_invisible">      
+    <form action="https://jsonplaceholder.typicode.com/posts" method="post" class="modal-form" >
+      <div class="modal-form__inner">
+        <button class="modal-form__close btn__close" type="button">
+          <span class="close close_first"></span>
+          <span class="close close_second"></span>
+        </button>
+        <h2 class="modal-form__title">Заказать звонок</h2>
+        <label class="modal-form__label">
+          Имя
+          <input type="text" class="modal-form__input inputName" name="name">
+        </label>
+        <label class="modal-form__label">
+          Телефон
+          <input type="tel" class="modal-form__input inputPhone" name="phone">
+        </label>
+        <button class="modal-form__btn-submit">
+          Позвонить мне
+        </button>
+      </div>        
+    </form>
+
+  </div>
 
 </body>
 </html>

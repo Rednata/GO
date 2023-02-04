@@ -1,5 +1,7 @@
 const headerBtn = document.querySelector('.header__btn');
 const overlayModal = document.querySelector('.overlay-modal');
+const burgerBtn =  document.querySelector('#burgerBtn');
+console.log(burgerBtn);
 
 const openModal = () => {
   overlayModal.classList.remove('overlay-modal_invisible');
