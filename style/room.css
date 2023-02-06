@@ -13,25 +13,26 @@
   gap: 20px;
 }
 
-.room__item {
+.room__link {
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-repeat: no-repeat;
   background-position: center;
- background-size: cover;
+  background-size: cover;
 }
 
-.room__item_vibes {
+.room__link_vibes {
   background-image: url("../assets/room/80-sVibes.jpg");
 }
-.room__item_star {
+.room__link_star {
   background-image: url("../assets/room/starWars.jpg");
 }
-.room__item_west {
+.room__link_west {
   background-image: url("../assets/room/wildWest.jpg");
 }
-.room__item_neon {
+.room__link_neon {
   background-image: url("../assets/room/neon.jpg");
 }
 

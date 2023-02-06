@@ -1,2 +1,5 @@
 /.idea
 /PP
+node_modules
+dist
+.parcel-cache

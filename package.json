@@ -1,0 +1,11 @@
+{
+  "name": "go",
+  "scripts": {},
+  "dependencies": {
+    "inputmask": "^5.0.7",
+    "just-validate": "^4.1.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.8.3"
+  }
+}

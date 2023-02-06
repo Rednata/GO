@@ -1,3 +1,5 @@
+import { closeBurger } from './controlBurger.js';
+
 const headerBtn = document.querySelector('.header__btn');
 const overlayModal = document.querySelector('.overlay-modal');
 
@@ -14,8 +16,14 @@ const closeModal = () => {
   });
 };
 
-const controlModal = () => {
-  headerBtn.addEventListener('click', openModal);
+const controlModal = () => {  
+  headerBtn.addEventListener('click', () => {
+    if (headerBtn.classList.contains('header__btn_burger')) {
+      closeBurger();
+    }
+    openModal();
+  })
+  
   closeModal();
 };
 
