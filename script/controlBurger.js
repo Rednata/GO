@@ -1,10 +1,16 @@
-const burgerOpenMenu = document.querySelector('.burger__img');
+const burgerMenu = document.querySelector('.header__burger-icon');
 const overlayBurger = document.querySelector('.overlay-burger');
+const header = document.querySelector('.header__box');
+const nav = document.querySelector('.nav');
+const navList = document.querySelector('.nav__list');
+const headerBtnCall = document.querySelector('.header__btn');
+
 const duration = 300;
 
 const movie = (progress) => {
-  const left = (progress) * 100;
+  const left = ((progress - 1) * 100) ;
   overlayBurger.style.transform = `translateX(${left}%)`;
+  header.style.transform = `translateX(${left}%)`;  
 };
 
 const animate = (duration, movie) => {
@@ -16,79 +22,67 @@ const animate = (duration, movie) => {
     if (progress < 0.99) {
       requestAnimationFrame(step);
     }
-  });
-};
-
-const getHeightHeader = () => {
-  return document.querySelector('.header__box').clientHeight + 40;
-};
-
-const hiddenImg = () => {
-  const gameOverImg = document.querySelector('.game-over__img');
-  gameOverImg.style.display = 'none';
-};
-
-const createBtnCallHeader = () => {
-  const btnCall = document.createElement('button');
-  btnCall.textContent = 'Заказать звонок';
-  btnCall.classList.add('header__btn');
-  btnCall.style.display = 'block';
-  document.querySelector('.nav__list_burger').append(btnCall);
-};
+  });  
+}
 
 const openBurger = () => {
-  overlayBurger.style.display = 'block';
-  burgerOpenMenu.src = './assets/header/close.svg';
-  burgerOpenMenu.classList.toggle('open');
-  const heightHeader = getHeightHeader();
-  overlayBurger.style.top = `${heightHeader}px`;
-
-  if (document.body.offsetWidth < 650) {
-    hiddenImg();
-  }
-  if (document.body.offsetWidth < 480) {
-    createBtnCallHeader();
-  }
-};
+  burgerMenu.classList.add('header__burger-icon_active');
+  header.classList.add('header__box_burger');
+  nav.classList.add('nav_burger');
+  navList.classList.add('nav__list_burger');
+  overlayBurger.classList.add('overlay-burger_active');
+  headerBtnCall.classList.add('header__btn_burger');  
+}
 
 const closeBurger = () => {
-  overlayBurger.style.display = 'none';
-  overlayBurger.style.left = '-100%';
-  burgerOpenMenu.src = './assets/header/menu.svg';
-  burgerOpenMenu.classList.toggle('open');
-  const gameOverImg = document.querySelector('.game-over__img');
-  gameOverImg.style.display = 'block';
+  const tempDiv = document.querySelector('.tempDiv');
+  tempDiv.remove();
+  overlayBurger.className = ('overlay-burger');
+  header.className = 'header__box';
+  nav.classList.remove('nav_burger');
+  navList.classList.remove('nav__list_burger');
+  headerBtnCall.classList.remove('header__btn_burger');  
+  burgerMenu.classList.remove('header__burger-icon_active');
+}
 
-  if (document.body.offsetWidth <= 480) {
-    const btnCall = overlayBurger.querySelector('.header__btn');
-    btnCall.remove();
-  }
-};
+const fixChangeHeight = () => {
+  const tempHeight = header.offsetHeight;
+  const main = document.querySelector('main');
+  const tempDiv = document.createElement('div');
+  tempDiv.className = 'tempDiv';
+  tempDiv.style.height = `${tempHeight}px`;
+  main.prepend(tempDiv);
+}
 
-const deleteOverlay = () => {
-  const navListBurger = document.querySelector('.nav__list_burger');
-  navListBurger.addEventListener('click', ({ target }) => {
-    if (target.closest('.nav__link')) {
-      closeBurger();
-    }
-  });
-};
+const mediaQ = window.matchMedia('(min-width: 860px)');
+mediaQ.addEventListener('change', (e) => {
+  if (e.matches) {
+    closeBurger();
+}
+})
 
 const controlBurger = () => {
-  burgerOpenMenu.addEventListener('click', () => {
-    if (burgerOpenMenu.classList.contains('open')) {
-      closeBurger();
-    } else {
-      openBurger();
+  burgerMenu.addEventListener('click', () => {
+    
+    if (burgerMenu.classList.contains('header__burger-icon_active')) {      
+      closeBurger();        
+    } else {            
+      fixChangeHeight();
+
+      openBurger()
       animate(duration, movie);
+
+ 
+
     }
-  });
+  })
+}
+
   overlayBurger.addEventListener('click', ({ target }) => {
     if (target.classList.contains('overlay-burger')) {
       closeBurger();
     }
   });
-  deleteOverlay();
-};
 
-export {controlBurger};
+
+export {controlBurger, closeBurger};
