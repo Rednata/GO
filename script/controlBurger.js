@@ -36,7 +36,7 @@ const openBurger = () => {
 
 const closeBurger = () => {
   const tempDiv = document.querySelector('.tempDiv');
-  tempDiv.remove();
+  if (tempDiv) tempDiv.remove();
   overlayBurger.className = ('overlay-burger');
   header.className = 'header__box';
   nav.classList.remove('nav_burger');

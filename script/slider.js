@@ -1,4 +1,4 @@
-// import Swiper from 'swiper/swiper-bundle';
+import Swiper from 'swiper/swiper-bundle';
 
 const makeSlider = () => {
   new Swiper('.swiper', {
@@ -27,12 +27,12 @@ const makeSlider = () => {
         spaceBetween: 20,
       },
     },
-  });
+  });  
 };
+
 
 // makeSlider();
 
-// const inputMask = new Inputmask('+7-(999)-999-99-99');
 
 export {makeSlider};
 
